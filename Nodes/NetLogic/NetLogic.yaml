@@ -1,0 +1,68 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: LocalizedClockLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: CurrentLocale
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Locale"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LocalizedTime
+    Id: g=611ba8838fca6993410e1c3abf6a96d9
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: LocalizedDate
+    Id: g=e4107f4a8feac4485e709de78c9a4276
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: VariablesSimulator
+  Type: NetLogic
+  Children:
+  - Name: iSin
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: iCos
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: iRamp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: bRunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Cycle/Start"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2

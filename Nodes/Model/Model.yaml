@@ -1,0 +1,131 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: LocaleChanged
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Locale"
+- File: Cycle/Cycle.yaml
+- File: Statistics/Statistics.yaml
+- File: Alarms/Alarms.yaml
+- File: Settings/Settings.yaml
+- File: PCB_Data/PCB_Data.yaml
+- Name: Locale
+  Id: g=075a63194ed42a8c89c47952185d74d9
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: MenuOpenedAux
+  Id: g=5b345bceba2f0e20ffb390a13a22c2f4
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Variable1Changed
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Variable1"
+  - Name: VariableValueChangedEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":42,"Namespace":3}
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":58}
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=3;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+            Value: {"IdType":2,"Id":"075a63194ed42a8c89c47952185d74d9","Namespace":22}
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+            Value: false
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+            Value: 0
+    - Name: EventArguments
+      Type: VariableValueChangedEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+        Value: ""
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+        Value: ""
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+        Value: 0

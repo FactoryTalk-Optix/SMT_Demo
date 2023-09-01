@@ -1,0 +1,10 @@
+Name: Cycle
+Type: FolderType
+Children:
+- Name: Start
+  Id: g=14dbc42d68a6eaf5a2d1076c1d4d9711
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- File: LiveData/LiveData.yaml
+- File: Status/Status.yaml

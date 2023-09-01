@@ -1,0 +1,929 @@
+Name: DemoC
+Type: FolderType
+Children:
+- Name: MainC
+  Id: g=ac937177b86da54e6a2fad1e379581af
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 480.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 222.0
+  - Name: Start
+    Type: Button
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 290.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 49.0
+    - Name: ImagePath
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      ModellingRule: Optional
+      Value: "ns=22;%PROJECTDIR%/Graphics/icon_play_white2.svg"
+    - Name: ImageWidth
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: ImageHeight
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":5}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"Id":22,"Namespace":3}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Set"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+              Value: {"IdType":2,"Id":"14dbc42d68a6eaf5a2d1076c1d4d9711","Namespace":22}
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+              Value: true
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: Stop
+    Type: Button
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 380.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 49.0
+    - Name: ImagePath
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      ModellingRule: Optional
+      Value: "ns=22;%PROJECTDIR%/Graphics/icon_stop_white2.svg"
+    - Name: ImageWidth
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: ImageHeight
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":5}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"Id":22,"Namespace":3}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Set"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+              Value: {"IdType":2,"Id":"14dbc42d68a6eaf5a2d1076c1d4d9711","Namespace":22}
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+              Value: false
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":""}
+  - Name: ArrowEnd
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=22;%PROJECTDIR%/Graphics/arrow_isometric_gradient_Tavola disegno 1.svg"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 160.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 39.0
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{NodeId:ns=22;g=14dbc42d-68a6-eaf5-a2d1-076c1d4d9711}"
+  - Name: Conveyor
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=22;%PROJECTDIR%/Graphics/9 CONVEYOR 05 - outline.svg"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 188.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 195.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: ArrowStart
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=22;%PROJECTDIR%/Graphics/arrow_isometric_gradient_Tavola disegno 1.svg"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 149.0
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{NodeId:ns=22;g=14dbc42d-68a6-eaf5-a2d1-076c1d4d9711}"
+  - Name: Speed
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":22,"TextId":"Speed:"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 290.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 134.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Barlow Medium"
+  - Name: ValueSpeed
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"0.5 m/s"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 385.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 131.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Barlow SemiBold"
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 14.0
+  - Name: PCBModel
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":22,"TextId":"PCB model :"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 290.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 158.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Barlow Medium"
+  - Name: ValuePCBModel
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"FBGA228P"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 385.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 155.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Barlow SemiBold"
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 14.0
+- Name: SettingsC
+  Id: g=653b52fe49a42c34521db66aa54f7e5b
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 480.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 222.0
+  - Name: ValueCarrier
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../DataGrid/UISelectedItem/Carrier"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+    - Name: CheckedText
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"ON"}
+    - Name: UncheckedText
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"OFF"}
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Barlow SemiBold"
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+  - Name: ValueOriginOffset
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"{0} (x;y)"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../DataGrid/UISelectedItem/OriginOffset"
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Barlow SemiBold"
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: DataGrid
+    Type: DataGrid
+    Children:
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"a64eba03ef91a4b85329a9a2a5d4c5c4","Namespace":22}
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"f65b6119fb4f3d8535739e02e6c9f763","Namespace":22}
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Query
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Columns
+      Type: BaseObjectType
+      Children:
+      - Name: DataGridColumn4
+        Type: DataGridColumn
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":22,"TextId":"Model"}
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 80.0
+        - Name: HeaderAlignment
+          Type: BaseDataVariableType
+          DataType: TextHorizontalAlignment
+          Value: 0
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          Value: 0
+        - Name: OrderBy
+          Type: BaseDataVariableType
+          DataType: NodePath
+          Value: ""
+        - Name: DataItemTemplate
+          Type: DataGridLabelItemTemplate
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}/BoardName"
+      - Name: DataGridColumn1
+        Type: DataGridColumn
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"W [mm]"}
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: -1.0
+        - Name: HeaderAlignment
+          Type: BaseDataVariableType
+          DataType: TextHorizontalAlignment
+          Value: 0
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          Value: 0
+        - Name: OrderBy
+          Type: BaseDataVariableType
+          DataType: NodePath
+          Value: ""
+        - Name: DataItemTemplate
+          Type: DataGridEditableLabelItemTemplate
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}/Width"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+      - Name: DataGridColumn2
+        Type: DataGridColumn
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"L [mm]"}
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: -1.0
+        - Name: HeaderAlignment
+          Type: BaseDataVariableType
+          DataType: TextHorizontalAlignment
+          Value: 0
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          Value: 0
+        - Name: OrderBy
+          Type: BaseDataVariableType
+          DataType: NodePath
+          Value: ""
+        - Name: DataItemTemplate
+          Type: DataGridEditableLabelItemTemplate
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}/Length"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+      - Name: DataGridColumn3
+        Type: DataGridColumn
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"T [mm]"}
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: -1.0
+        - Name: HeaderAlignment
+          Type: BaseDataVariableType
+          DataType: TextHorizontalAlignment
+          Value: 0
+        - Name: ContentAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          Value: 0
+        - Name: OrderBy
+          Type: BaseDataVariableType
+          DataType: NodePath
+          Value: ""
+        - Name: DataItemTemplate
+          Type: DataGridEditableLabelItemTemplate
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}/Heigth"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+    - Name: SelectedItem
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"f65b6119fb4f3d8535739e02e6c9f763","Namespace":22}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"f65b6119fb4f3d8535739e02e6c9f763","Namespace":22}
+    - Name: UISelectedItem
+      Type: BaseDataVariableType
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Class: Reference
+      Target: ns=5;i=504
+      Direction: Forward
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 250.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"f65b6119fb4f3d8535739e02e6c9f763","Namespace":22}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+  - Name: Carrier
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":22,"TextId":"Carrier :"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 298.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: OriginOffset
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":22,"TextId":"Origin offset :"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 298.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+  - Name: ConveySpeed
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":22,"TextId":"Conveyor Speed :"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 298.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 90.0
+  - Name: Title
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":22,"TextId":"PCB data"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Barlow SemiBold"
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 14.0
+  - Name: ValueConveySpeed
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../DataGrid/UISelectedItem/ConveySpeed"
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 89.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Barlow SemiBold"
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 2

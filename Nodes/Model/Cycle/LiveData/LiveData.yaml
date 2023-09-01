@@ -1,0 +1,188 @@
+Name: LiveData
+Type: FolderType
+Children:
+- Name: OvenTemperature1
+  Id: g=a85d966b2cd0e82631ec94963615666d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 120
+- Name: OvenTemperature2
+  Id: g=cc5c70623cf35560580a34da479670c2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 175
+- Name: OvenTemperature3
+  Id: g=0f484d2fb029b00d476e90c16b0c3345
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 220
+- Name: OvenTemperature4
+  Id: g=e3b0200d0cbce9d2d7eb562909f6b215
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 90
+- Name: OvenTemperature5
+  Id: g=4180574858fdec0791d495dd94bbce2a
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 30
+- Name: PickPlaceProgress1
+  Id: g=30f032d3c5f9dd33667dbe92bf72dab9
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: PickPlaceProgress2
+  Id: g=ce7823872a72f822711edde141705569
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: PickPlaceProgress3
+  Id: g=c536b5b9c6c483147fc4699417964450
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: PickPlaceOverall
+  Id: g=9b29f69298f4dd0910143bdbe3f22df3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: ReelCounter1
+  Id: g=cac767a71f4d280cef56e6f6b75f9c1d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10000
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: EURange
+    Value: 
+     {
+      "TypeId": {
+       "Id": 884
+      },
+      "Body": {
+       "low": 0.0,
+       "high": 0.0
+      }
+     }
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: ReelCounter2
+  Id: g=be02a7fb768d4ba17fb3660720b64ab9
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10000
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: EURange
+    Value: 
+     {
+      "TypeId": {
+       "Id": 884
+      },
+      "Body": {
+       "low": 0.0,
+       "high": 0.0
+      }
+     }
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: ReelCounter3
+  Id: g=5795a219f33879b63fc354b621480fda
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10000
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: EURange
+    Value: 
+     {
+      "TypeId": {
+       "Id": 884
+      },
+      "Body": {
+       "low": 0.0,
+       "high": 0.0
+      }
+     }
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+- Name: ReelCounter4
+  Id: g=ad2d7405d68a4583eb57c80b01ede044
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 10000
+  Children:
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: EURange
+    Value: 
+     {
+      "TypeId": {
+       "Id": 884
+      },
+      "Body": {
+       "low": 0.0,
+       "high": 0.0
+      }
+     }
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10000.0
+    - Name: Constrain
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true

@@ -1,0 +1,27 @@
+Name: Users
+Id: g=2b73984a35bc9013d8328884172b7349
+Type: UsersCategoryFolder
+Children:
+- Name: John Doe
+  Id: g=fda5c52da48119d5de294b099193eda6
+  Type: UserType
+  Children:
+  - Name: LocaleId
+    Id: g=4c7302489a930417ebd4b0381db25b5e
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"
+  - Class: Reference
+    Type: HasGroup
+    Target: g=01de93685200e61065bfd639bf96f272
+  - Class: Reference
+    Type: HasGroup
+    Target: g=15c7458fb4568edc6ae458475e4811d0
+- Name: Mario Rossi
+  Id: g=fb79c920c24fe70043d3b42234ab779c
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=15c7458fb4568edc6ae458475e4811d0

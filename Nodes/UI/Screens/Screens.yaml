@@ -1,0 +1,572 @@
+Name: Screens
+Type: ScreensCategoryFolder
+Children:
+- Name: LoginDialog
+  Id: g=04bfb92e9a900c7053f26f73fa6b9162
+  Supertype: CustomDialogBox
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=5;i=519
+    Direction: Forward
+  - Name: Background
+    Type: Rectangle
+    Children:
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#79cced"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffffe1"
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 260.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 260.0
+  - Name: LoginForm
+    Type: LoginForm
+    Children:
+    - Name: Panel
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":71,"Namespace":5}
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/LoggedIn"
+    - Name: CurrentPanel
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":6,"Namespace":5}
+    - Class: Reference
+      Target: ns=5;i=478
+      Direction: Forward
+    - Name: Users
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"2b73984a35bc9013d8328884172b7349","Namespace":22}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":61}
+    - Name: PanelAliasNode
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../Users@NodeId"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=22;%PROJECTDIR%/Graphics/gradient_header.svg"
+    - Name: FillMode
+      Type: BaseDataVariableType
+      DataType: FillModeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+    - Name: MoveTarget
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../..@NodeId"
+  - Name: Close
+    Type: Button
+    Children:
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":5}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Close"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: Modal
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: false
+- Name: CloseApplicationDialog
+  Id: g=bcd77fc613ebb5bbd67f6baccf62d23b
+  Supertype: CustomDialogBox
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=5;i=519
+    Direction: Forward
+  - Name: Background
+    Type: Rectangle
+    Children:
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#79cced"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffffe1"
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 260.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 260.0
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=22;%PROJECTDIR%/Graphics/gradient_header.svg"
+    - Name: FillMode
+      Type: BaseDataVariableType
+      DataType: FillModeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+    - Name: MoveTarget
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../..@NodeId"
+  - Name: Close
+    Type: Button
+    Children:
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":5}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Close"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: Modal
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: false
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":22,"TextId":"Do you really want to quit?"}
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 14.0
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 400
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Barlow SemiBold"
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":22,"TextId":"Yes"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 160.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":5}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"Id":29,"Namespace":3}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Close"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: Button2
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":22,"TextId":"No"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 140.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 160.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":5}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../..@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Close"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+- File: DemoA/DemoA.yaml
+- File: DemoA1/DemoA1.yaml
+- File: DemoA2/DemoA2.yaml
+- File: DemoA3/DemoA3.yaml
+- File: DemoB/DemoB.yaml
+- File: DemoB1/DemoB1.yaml
+- File: DemoC/DemoC.yaml

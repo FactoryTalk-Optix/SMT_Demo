@@ -1,0 +1,5 @@
+Name: Alarms
+Type: AlarmsCategoryFolder
+Children:
+- File: PickPlaceAlarms/PickPlaceAlarms.yaml
+- File: LineOverview/LineOverview.yaml

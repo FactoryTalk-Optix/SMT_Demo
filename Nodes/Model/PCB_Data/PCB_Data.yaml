@@ -1,0 +1,285 @@
+Name: PCB_Data
+Id: g=a64eba03ef91a4b85329a9a2a5d4c5c4
+Type: FolderType
+Children:
+- Name: ObjectA
+  Id: g=f65b6119fb4f3d8535739e02e6c9f763
+  Type: BaseObjectType
+  Children:
+  - Name: BoardName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FBGA228P"
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 310.0
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 305.0
+  - Name: Heigth
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.600000023841858
+  - Name: OriginOffset
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0;0"
+  - Name: ConveySpeed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "High"
+  - Name: Carrier
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Index
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: ObjectB
+  Type: BaseObjectType
+  Children:
+  - Name: BoardName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FBGA931T"
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 155.5
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 160.5
+  - Name: Heigth
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 3.200000047683716
+  - Name: OriginOffset
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "55;80"
+  - Name: ConveySpeed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Low"
+  - Name: Carrier
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Index
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+- Name: ObjectC
+  Type: BaseObjectType
+  Children:
+  - Name: BoardName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FBGA223B"
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 155.0
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 165.0
+  - Name: Heigth
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.600000023841858
+  - Name: OriginOffset
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "35;22"
+  - Name: ConveySpeed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "High"
+  - Name: Carrier
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Index
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+- Name: ObjectD
+  Type: BaseObjectType
+  Children:
+  - Name: BoardName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FBGA223A"
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 100.0
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 150.0
+  - Name: Heigth
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.899999976158142
+  - Name: OriginOffset
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "22;44"
+  - Name: ConveySpeed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Medium"
+  - Name: Carrier
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Index
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 9
+- Name: ObjectE
+  Type: BaseObjectType
+  Children:
+  - Name: BoardName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FHUA283A"
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 195.0
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 200.0
+  - Name: Heigth
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.7999999523162842
+  - Name: OriginOffset
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "15;15"
+  - Name: ConveySpeed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Low"
+  - Name: Carrier
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Index
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+- Name: ObjectF
+  Type: BaseObjectType
+  Children:
+  - Name: BoardName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FBGA223A"
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 165.0
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 185.0
+  - Name: Heigth
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.100000023841858
+  - Name: OriginOffset
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "10;10"
+  - Name: ConveySpeed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "High"
+  - Name: Carrier
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Index
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 7
+- Name: ObjectG
+  Type: BaseObjectType
+  Children:
+  - Name: BoardName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ALGA228L"
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 55.0
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 60.0
+  - Name: Heigth
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.800000011920929
+  - Name: OriginOffset
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0;0"
+  - Name: ConveySpeed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Medium"
+  - Name: Carrier
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Index
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+- Name: ObjectH
+  Type: BaseObjectType
+  Children:
+  - Name: BoardName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FBGB552B"
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 135.0
+  - Name: Length
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 125.0
+  - Name: Heigth
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.5
+  - Name: OriginOffset
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "9;9"
+  - Name: ConveySpeed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Low"
+  - Name: Carrier
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Index
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 3
