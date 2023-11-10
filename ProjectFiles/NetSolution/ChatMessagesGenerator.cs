@@ -15,6 +15,7 @@ using FTOptix.Core;
 using LoremNET;
 using FTOptix.SQLiteStore;
 using FTOptix.Store;
+using FTOptix.WebUI;
 #endregion
 
 public class ChatMessagesGenerator : BaseNetLogic

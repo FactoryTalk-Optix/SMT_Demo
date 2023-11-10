@@ -15,6 +15,7 @@ using FTOptix.Core;
 using System.Linq;
 using FTOptix.SQLiteStore;
 using FTOptix.Store;
+using FTOptix.WebUI;
 #endregion
 
 public class DemoA_AlarmsWidgetLogic : BaseNetLogic

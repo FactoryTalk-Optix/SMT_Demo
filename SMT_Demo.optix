@@ -89,5 +89,13 @@ Project:
    Uri: 'urn:FTOptix:Retentivity:Net'
    Module: FTOptix.Retentivity.Net
    Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:WebUI'
+   Module: FTOptix.WebUI
+   Version: 1.1
+  24:
+   Uri: 'urn:FTOptix:WebUI:Net'
+   Module: FTOptix.WebUI.Net
+   Version: 1.1
  Nodes:
  - File: Nodes/SMT_Demo.yaml

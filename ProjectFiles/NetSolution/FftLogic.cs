@@ -17,6 +17,7 @@ using FftSharp;
 using System.Linq;
 using FTOptix.SQLiteStore;
 using FTOptix.Store;
+using FTOptix.WebUI;
 #endregion
 
 public class FftLogic : BaseNetLogic

@@ -14,6 +14,7 @@ using FTOptix.OPCUAServer;
 using FTOptix.EventLogger;
 using FTOptix.SQLiteStore;
 using FTOptix.Store;
+using FTOptix.WebUI;
 #endregion
 
 public class LoginChangePasswordFormOutputMessageLogic : BaseNetLogic

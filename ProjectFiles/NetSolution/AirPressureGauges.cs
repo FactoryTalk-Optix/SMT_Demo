@@ -14,6 +14,7 @@ using FTOptix.OPCUAServer;
 using FTOptix.Retentivity;
 using FTOptix.Alarm;
 using FTOptix.Core;
+using FTOptix.WebUI;
 #endregion
 
 public class AirPressureGauges : BaseNetLogic

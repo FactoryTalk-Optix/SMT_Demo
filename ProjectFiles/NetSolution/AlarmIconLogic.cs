@@ -15,6 +15,7 @@ using FTOptix.Retentivity;
 using FTOptix.Alarm;
 using FTOptix.Core;
 using System.Linq;
+using FTOptix.WebUI;
 #endregion
 
 public class AlarmIconLogic : BaseNetLogic

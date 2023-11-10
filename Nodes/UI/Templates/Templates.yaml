@@ -2018,6 +2018,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 2.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
   - Name: InputAlarm
     Type: NodePointer
     DataType: NodeId
@@ -2159,11 +2164,6 @@ Children:
         DataType: Font
         ModellingRule: Optional
         Value: "Barlow SemiBold"
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: -1.0
       - Name: WordWrap
         Type: BaseDataVariableType
         DataType: Boolean
@@ -2328,6 +2328,11 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
 - Name: Chat
   Id: g=f63b6df94834ae93261ee8770e693a5a
   Supertype: Panel
