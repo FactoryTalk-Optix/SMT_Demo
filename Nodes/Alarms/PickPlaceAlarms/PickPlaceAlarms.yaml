@@ -1,28 +1,33 @@
 Name: PickPlaceAlarms
+Id: g=9a98ea31169c1cd5330a0ebdfef158b1
 Type: FolderType
 Children:
 - Name: WarningPP1
+  Id: g=2941ede5d2b2b118247ff1e6ec39d03c
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
+    Id: g=dbb0fbc2fc690a12d4b4854cd47196b6
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
+    Id: g=0b1c9e01b3ea0a15637ec84c197d39e4
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
+      Id: g=10b45f4851b5927b5ea655255c860b70
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../Model/Alarms/WarningPP1"
       Children:
       - Name: Mode
+        Id: g=5808b7eb3f74d64919d88117fb062dec
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
+    Id: g=cb03cf5e0e36f2cca0df09a70f79eef2
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -37,41 +42,55 @@ Children:
     Target: ns=11;i=83
     Direction: Forward
   - Name: Severity
+    Id: g=306f6d9ca25a09eee4c6bc42385c2c61
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 2
   - Name: Active
-    Id: g=cb4dc9c36304f09b17f16cbe8baa1c98
+    Id: g=98164b8899ee0ce106697ccc9d5e9ded
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
-    Value: false
   - Name: Message
+    Id: g=51b8fae37e5d8e5c320de3325034fbf8
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":22,"TextId":"Pick and place reel low material"}
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
 - Name: WarningPP2
+  Id: g=ded705e5cfdf73d55a4e7190a9d9e548
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
+    Id: g=b23df82c063bc4d7429b30daa477c76c
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
+    Id: g=d82c182cc901bdba5b6e3a03092fa2da
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
+      Id: g=9d978c0fbfa8c285b35c12073becec8c
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../Model/Alarms/WarningPP2"
       Children:
       - Name: Mode
+        Id: g=b3d293b85d1426e8dff2de09bd9f8674
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
+    Id: g=3f1d4bdab71b4ee912ffe9850a3be709
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -86,41 +105,55 @@ Children:
     Target: ns=11;i=83
     Direction: Forward
   - Name: Severity
+    Id: g=892750de1543a76df68e6d9ddedac4f9
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 2
   - Name: Active
-    Id: g=d7189360d0eff67331b12f32340b586a
+    Id: g=3a157c1ee5a289492e165f1120867895
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
-    Value: false
   - Name: Message
+    Id: g=cb2d29e0f315224eafa6ac86d20fb11c
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":22,"TextId":"Pick and place reel low material"}
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
 - Name: WarningPP3
+  Id: g=794473c7ada7cbaac55db5785ec334b6
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
+    Id: g=a0c3cf8a9dde50d594fb33c8d5d263ac
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
+    Id: g=e30ce30b0e9208ad7ebb06368b2f710f
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
+      Id: g=0c1c115182d2fce8a81638efac939455
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../Model/Alarms/WarningPP3"
       Children:
       - Name: Mode
+        Id: g=17770a95e8dc1ac213f47dc69ff8b0e3
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
+    Id: g=f92481e12b32d1496e640f23dd6ec35d
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -135,41 +168,55 @@ Children:
     Target: ns=11;i=83
     Direction: Forward
   - Name: Severity
+    Id: g=5281cf3d0048edb8ae73a51dbd2c6b2d
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 2
   - Name: Active
-    Id: g=065791ca7f86a5d621397af8b7a691a7
+    Id: g=ba2a8d329d14a2ef7f022811d2e2ddff
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
-    Value: false
   - Name: Message
+    Id: g=1e142f36c437faea1d8974ec8ec47667
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":22,"TextId":"Pick and place reel low material"}
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
 - Name: WarningPP4
+  Id: g=ea21c074c1258daa112af0c067fc9e29
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
+    Id: g=0ba7b8f179a1c3dc53c42144dfcfc942
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
+    Id: g=ce63c76af8360b5f5807a3dfa54bb13e
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
+      Id: g=ad1acb8a75cbdd9674b552df1193cf6f
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../Model/Alarms/WarningPP4"
       Children:
       - Name: Mode
+        Id: g=1c0b8eebe2604f186ccc1248cfe60098
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
+    Id: g=66af24de641d51f177539382f4790163
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -184,41 +231,55 @@ Children:
     Target: ns=11;i=83
     Direction: Forward
   - Name: Severity
+    Id: g=59815a81a81b78b74ae171981b871128
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 2
   - Name: Active
-    Id: g=6ff817c8c05b3fa4f3793e9655539b52
+    Id: g=a5ab4381c7c6623ccbe3bb470cea41bf
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
-    Value: false
   - Name: Message
+    Id: g=a94e3fce9636d60d3f44a9ce88d6b2e2
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":22,"TextId":"Pick and place reel low material"}
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
 - Name: ErrorPP1
+  Id: g=3488586361f1aad712cb56ca2163a285
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
+    Id: g=ccad27b03d66f31122d8f4dedb13fa33
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
+    Id: g=6941e6d7f1925f5900bf922002be8c02
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
+      Id: g=b108d2713f99a7515b0add6db2682d68
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../Model/Alarms/ErrorPP1"
       Children:
       - Name: Mode
+        Id: g=adfc93aa78e4a65d08540245eca3c0ef
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
+    Id: g=0d5d76d2f1f1b45ffe964afb69580d46
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -233,41 +294,55 @@ Children:
     Target: ns=11;i=83
     Direction: Forward
   - Name: Severity
+    Id: g=36fb252a0a6e898284758e8cb6fd2d52
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 3
   - Name: Active
-    Id: g=db6f3522562cc53ba026828d602c8899
+    Id: g=7f9a4c5018c29b20c87bda9a37f0fab1
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
-    Value: false
   - Name: Message
+    Id: g=64458eff1c9dd170f6b11b6f0db7ad5f
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":22,"TextId":"Pick and place reel material ended"}
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
 - Name: ErrorPP2
+  Id: g=a3608d8ad5938e69d2c711f7074ca786
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
+    Id: g=3d6e4bc874520e3115ce7058a59e43ff
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
+    Id: g=d959d5c427e886fdcd7e0c2af7b998a0
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
+      Id: g=bffaca6cc6bd07eafe2555052fc910ea
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../Model/Alarms/ErrorPP2"
       Children:
       - Name: Mode
+        Id: g=ac882c8f8e72681136aa27665dbc22eb
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
+    Id: g=1e2aa0d2ccf22d074f488843166a6256
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -282,41 +357,55 @@ Children:
     Target: ns=11;i=83
     Direction: Forward
   - Name: Severity
+    Id: g=30b0e80a70a17026d3f5a724f815b19f
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 3
   - Name: Active
-    Id: g=149241a23ded110d26564db1607a84ba
+    Id: g=873eba3527e6fbd1a745c4e092a5dce4
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
-    Value: false
   - Name: Message
+    Id: g=f0a7b85c825c3fce66d1420daa797e9f
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":22,"TextId":"Pick and place reel material ended"}
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
 - Name: ErrorPP3
+  Id: g=28e9a30ea053a4eec764ba5f8a7961a7
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
+    Id: g=7beb1d87cbbc8feb1177b8d77b7c7609
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
+    Id: g=195321a556087481990a0da18620fd95
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
+      Id: g=5ae751455df14806fd6191040c2d7a6a
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../Model/Alarms/ErrorPP3"
       Children:
       - Name: Mode
+        Id: g=723838330243d753dc65911c5f9ceaa2
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
+    Id: g=a029b05a2bdc6174e9b68f297a652a36
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -331,41 +420,55 @@ Children:
     Target: ns=11;i=83
     Direction: Forward
   - Name: Severity
+    Id: g=72c08b216cf22d3eab08dc2c65e6ea0b
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 3
   - Name: Active
-    Id: g=930215b83ddac47af3d590857a9b11d9
+    Id: g=b3c68b2894118b27db2e90a838e88c2e
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
-    Value: false
   - Name: Message
+    Id: g=c32f8ac6567aa094e57ce5661ee4abfd
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":22,"TextId":"Pick and place reel material ended"}
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
 - Name: ErrorPP4
+  Id: g=c89179fdcad1239734356f7e608fae96
   Type: OffNormalAlarmController
   Children:
   - Name: NormalStateValue
+    Id: g=86171c63dd9b51d2e829c4f0c602ea67
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
   - Name: InputValue
+    Id: g=d8843f383f3f4bdd2c50a2fb3e4dd94a
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
+      Id: g=ef1dedc49fad494917553e6977f065e5
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../../Model/Alarms/ErrorPP4"
       Children:
       - Name: Mode
+        Id: g=bea9823e6f2cdc548671390aef0f3699
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
+    Id: g=d5aab424978980b4dc598d91c4b3660d
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -380,16 +483,26 @@ Children:
     Target: ns=11;i=83
     Direction: Forward
   - Name: Severity
+    Id: g=918b5933eb35c6e057c6c1bba901b33a
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 3
   - Name: Active
-    Id: g=041b2715d9444f3f41869fde2812aed5
+    Id: g=655e875a6d095d54c7a847b30b248e19
     Type: BaseDataVariableType
     DataType: Boolean
     AccessLevel: Read
-    Value: false
   - Name: Message
+    Id: g=67991236b295854f73248ca2c5ff4935
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"NamespaceIndex":22,"TextId":"Pick and place reel material ended"}
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward

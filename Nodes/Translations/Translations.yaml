@@ -1,7 +1,9 @@
 Name: Translations
+Id: g=98841068b9c621782499e5303c575f03
 Type: TranslationsCategoryFolder
 Children:
 - Name: LocalizationDictionary1
+  Id: g=e613a2ee7206d304b63d706198a27a26
   Type: LocalizationDictionary
   DataType: String
   ValueRank: OneOrMoreDimensions
@@ -9,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [186,3],
+    "Dimensions": [192,3],
     "Body": [
      "","en-US","it-IT",
      "Password","Password","Password",
@@ -196,6 +198,12 @@ Children:
      "Yes","Yes","Sì",
      "Pick and place reel low","Pick and place reel low","Pick and place bobina in esaurimento",
      "Pick and place reel low material","Pick and place reel low material","Pick and place bobina in esaurimento",
-     "Pick and place reel material ended","Pick and place reel material ended","Pick and place bobina esaurita"
+     "Pick and place reel material ended","Pick and place reel material ended","Pick and place bobina esaurita",
+     "MQTT_Diagnostics","MQTT Diagnostics","Monitoraggio MQTT",
+     "MQTTSettings","MQTT Settings","Impostazioni MQTT",
+     "MQTTAddress","Broker Address","Indirizzo Broker",
+     "MQTTPort","Broker Port","Porta Broker",
+     "MQTTSubscriber","MQTT Subscriber","MQTT Subscriber",
+     "MQTTPublisher","MQTT Publisher","MQTT Publisher"
     ]
    }

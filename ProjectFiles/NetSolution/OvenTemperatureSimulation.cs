@@ -1,20 +1,8 @@
 #region Using directives
 using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.HMIProject;
-using FTOptix.Retentivity;
-using FTOptix.NativeUI;
-using FTOptix.UI;
-using FTOptix.CoreBase;
-using FTOptix.Alarm;
 using FTOptix.NetLogic;
-using FTOptix.Core;
-using FTOptix.OPCUAServer;
-using FTOptix.EventLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.WebUI;
+using UAManagedCore;
 #endregion
 
 public class OvenTemperatureSimulation : BaseNetLogic
@@ -49,57 +37,88 @@ public class OvenTemperatureSimulation : BaseNetLogic
         TemperatureOscillationTask?.Dispose();
     }
 
-    private void OvenTemperatureGenerator() {
+    private void OvenTemperatureGenerator()
+    {
         var tempTolerance = LogicObject.GetVariable("TemperatureTolerance");
         Int32 tempToleranceMin = tempTolerance.Value * -1;
         Int32 tempToleranceMax = tempTolerance.Value;
         var OvenTempValue = Project.Current.GetVariable("Model/Cycle/LiveData/OvenTemperature1");
-        if (OvenTempValue.Value == TemperatureTarget1 + TemperatureOscillation1) {
+        if (OvenTempValue.Value == TemperatureTarget1 + TemperatureOscillation1)
+        {
             TemperatureOscillation1 = rnd.Next(tempToleranceMin, tempToleranceMax);
-        } else {
-            if (OvenTempValue.Value > TemperatureTarget1 + TemperatureOscillation1) {
+        }
+        else
+        {
+            if (OvenTempValue.Value > TemperatureTarget1 + TemperatureOscillation1)
+            {
                 --OvenTempValue.Value;
-            } else {
+            }
+            else
+            {
                 ++OvenTempValue.Value;
             }
         }
         OvenTempValue = Project.Current.GetVariable("Model/Cycle/LiveData/OvenTemperature2");
-        if (OvenTempValue.Value == TemperatureTarget2 + TemperatureOscillation2) {
+        if (OvenTempValue.Value == TemperatureTarget2 + TemperatureOscillation2)
+        {
             TemperatureOscillation2 = rnd.Next(tempToleranceMin, tempToleranceMax);
-        } else {
-            if (OvenTempValue.Value > TemperatureTarget2 + TemperatureOscillation2) {
+        }
+        else
+        {
+            if (OvenTempValue.Value > TemperatureTarget2 + TemperatureOscillation2)
+            {
                 --OvenTempValue.Value;
-            } else {
+            }
+            else
+            {
                 ++OvenTempValue.Value;
             }
         }
         OvenTempValue = Project.Current.GetVariable("Model/Cycle/LiveData/OvenTemperature3");
-        if (OvenTempValue.Value == TemperatureTarget3 + TemperatureOscillation3) {
+        if (OvenTempValue.Value == TemperatureTarget3 + TemperatureOscillation3)
+        {
             TemperatureOscillation3 = rnd.Next(tempToleranceMin, tempToleranceMax);
-        } else {
-            if (OvenTempValue.Value > TemperatureTarget3 + TemperatureOscillation3) {
+        }
+        else
+        {
+            if (OvenTempValue.Value > TemperatureTarget3 + TemperatureOscillation3)
+            {
                 --OvenTempValue.Value;
-            } else {
+            }
+            else
+            {
                 ++OvenTempValue.Value;
             }
         }
         OvenTempValue = Project.Current.GetVariable("Model/Cycle/LiveData/OvenTemperature4");
-        if (OvenTempValue.Value == TemperatureTarget4 + TemperatureOscillation4) {
+        if (OvenTempValue.Value == TemperatureTarget4 + TemperatureOscillation4)
+        {
             TemperatureOscillation4 = rnd.Next(tempToleranceMin, tempToleranceMax);
-        } else {
-            if (OvenTempValue.Value > TemperatureTarget4 + TemperatureOscillation4) {
+        }
+        else
+        {
+            if (OvenTempValue.Value > TemperatureTarget4 + TemperatureOscillation4)
+            {
                 --OvenTempValue.Value;
-            } else {
+            }
+            else
+            {
                 ++OvenTempValue.Value;
             }
         }
         OvenTempValue = Project.Current.GetVariable("Model/Cycle/LiveData/OvenTemperature5");
-        if (OvenTempValue.Value == TemperatureTarget5 + TemperatureOscillation5) {
+        if (OvenTempValue.Value == TemperatureTarget5 + TemperatureOscillation5)
+        {
             TemperatureOscillation5 = rnd.Next(tempToleranceMin, tempToleranceMax);
-        } else {
-            if (OvenTempValue.Value > TemperatureTarget5 + TemperatureOscillation5) {
+        }
+        else
+        {
+            if (OvenTempValue.Value > TemperatureTarget5 + TemperatureOscillation5)
+            {
                 --OvenTempValue.Value;
-            } else {
+            }
+            else
+            {
                 ++OvenTempValue.Value;
             }
         }

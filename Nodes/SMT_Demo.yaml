@@ -1,49 +1,59 @@
 Name: SMT_Demo
+Id: g=9ffeec70ae33cec5ef475293adda21b8
 Type: ProjectFolder
 Children:
 - Name: Localization
+  Id: g=44d6e3df719ab265475cc6bc82ba48cf
   Type: PropertyGroup
   Children:
   - Name: Locales
-    Type: PropertyType
-    DataType: String
+    Id: g=8fda54154e6a56e804b7a5b083fa96d0
+    Type: BaseDataVariableType
+    DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US","it-IT"]
   - Name: LocaleFallbackList
-    Type: PropertyType
-    DataType: String
+    Id: g=3d7a5b5c34d6190d2812500c1b0845a5
+    Type: BaseDataVariableType
+    DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
   - Name: MeasurementSystemMap
-    Type: PropertyType
+    Id: g=fd46ea44f7166cbeb6f9a8a0db724fea
+    Type: BaseDataVariableType
     DataType: MeasurementSystemMapItem
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: [{"TypeId":{"Id":235,"Namespace":1},"Body":{"From":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4935745,"NamespaceIndex":0}},"InternationalSystemOfUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4935745,"NamespaceIndex":0}},"USCustomarySystem":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4935745,"NamespaceIndex":0}},"BritishImperialUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":4935745,"NamespaceIndex":0}}}},{"TypeId":{"Id":235,"Namespace":1},"Body":{"From":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":5066817,"NamespaceIndex":0}},"InternationalSystemOfUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":5066817,"NamespaceIndex":0}},"USCustomarySystem":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":5066817,"NamespaceIndex":0}},"BritishImperialUnits":{"TypeId":{"Id":244,"Namespace":1},"Body":{"Id":5066817,"NamespaceIndex":0}}}}]
 - Name: Authentication
+  Id: g=cc66922a3ba1d2c9d80b140f04d33802
   Type: PropertyGroup
 - Name: PasswordPolicy
+  Id: g=fcc1615ebafb8cfe9a1c8ed0bce4eaaf
   Type: PasswordPolicy
   Children:
   - Name: MaximumPasswordAge
-    Type: PropertyType
+    Id: g=e510e6d0b807ba3feb7f7c35d2fc3065
+    Type: BaseDataVariableType
     DataType: UInt16
-    Value: 0
   - Name: EnforcePasswordHistory
-    Type: PropertyType
+    Id: g=68434556bc7b5ea5caeb99eaee566a9d
+    Type: BaseDataVariableType
     DataType: Byte
     Value: 1
   - Name: MinimumPasswordAge
-    Type: PropertyType
+    Id: g=17652f6b7357863be7e89368b620ced1
+    Type: BaseDataVariableType
     DataType: UInt16
-    Value: 0
   - Name: MinimumPasswordLength
-    Type: PropertyType
+    Id: g=b4803a3a8361453fb651bb52fe89b0e4
+    Type: BaseDataVariableType
     DataType: Byte
     Value: 8
 - Name: AlarmConfiguration
+  Id: g=2e9afe48d966be279231e31d033a752f
   Type: PropertyGroup
 - File: UI/UI.yaml
 - File: Model/Model.yaml

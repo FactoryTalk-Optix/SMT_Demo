@@ -1,4 +1,5 @@
 Name: LoginForm
+Id: g=24d74d1424ba2783952d6daece0ef26b
 Type: FolderType
 Children:
 - Name: LoginForm
@@ -7,77 +8,88 @@ Children:
   ReferenceType: HasComponent
   Children:
   - Name: Panel
+    Id: g=284150e5bd6e65c99989d5798e776c35
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
+      Id: g=9f8d7dad18d28d77c2c0873b1bc75d3c
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":71,"Namespace":5}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: ConditionalConverter1
+      Id: g=5d37a37bfe91bb3674cd0a8705aa296d
       Type: ConditionalConverter
       Children:
       - Name: Condition
+        Id: g=680e1054d626e3c7224c4386ad6b3266
         Type: BaseDataVariableType
         DataType: Boolean
         ReferenceType: HasSource
-        Value: false
         Children:
         - Name: DynamicLink
+          Id: g=ba56d259b7d2696280469c5dc0b38da9
           Type: DynamicLink
           DataType: NodePath
           Value: "{Session}/LoggedIn"
       - Name: TrueValue
+        Id: g=bdac3857ccad9973bc6b631cb710bb98
         Type: BaseDataVariableType
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: {"IdType":2,"Id":"2eebfd3def044e747aa57952fc13c70d","Namespace":22}
+        Value: "/Objects/SMT_Demo/UI/LoginForm/LoginFormComponents/Logout"
       - Name: FalseValue
+        Id: g=ee6c74fa0e2ecb87fa6023a33ce49c4c
         Type: BaseDataVariableType
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: {"IdType":2,"Id":"ce814fddddd607c776a3b9a6e0b90c27","Namespace":22}
+        Value: "/Objects/SMT_Demo/UI/LoginForm/LoginFormComponents/Login"
   - Name: CurrentPanel
+    Id: g=ab9fe62f2bd9657a1a13467ed26aaab7
     Type: NodePointer
     DataType: NodeId
     AccessLevel: Read
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
+      Id: g=116ec2c875e0b1600b56579164c51455
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":6,"Namespace":5}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
   - Class: Reference
     Target: ns=5;i=478
     Direction: Forward
   - Name: Width
+    Id: g=74378e3bb3c22bef9b5bd7098a5a8962
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
     Value: 200.0
   - Name: Height
+    Id: g=62ea4d332a914e8a37ae52e91aa7c657
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
     Value: 200.0
   - Name: Users
+    Id: g=e4852cdc5c92b989db37092d51bfac73
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: Kind
+      Id: g=c68d5d79e684de6f59234cf58a18acfe
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":61}
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: PanelAliasNode
+    Id: g=940f2ea24a84dc85af4a51abe17c3296
     Type: BaseDataVariableType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    ValueRank: ScalarOrOneDimension
     Children:
     - Name: DynamicLink
+      Id: g=6a8e977f726389d5ee70956e33bcd92d
       Type: DynamicLink
       DataType: NodePath
       Value: "../Users@NodeId"

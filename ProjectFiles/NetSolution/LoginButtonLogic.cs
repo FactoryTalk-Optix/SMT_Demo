@@ -1,18 +1,10 @@
 #region Using directives
 using System;
-using FTOptix.CoreBase;
-using FTOptix.HMIProject;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
-using FTOptix.NetLogic;
 using FTOptix.Core;
+using FTOptix.HMIProject;
+using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.Alarm;
-using FTOptix.OPCUAServer;
-using FTOptix.EventLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.WebUI;
+using UAManagedCore;
 #endregion
 
 public class LoginButtonLogic : BaseNetLogic

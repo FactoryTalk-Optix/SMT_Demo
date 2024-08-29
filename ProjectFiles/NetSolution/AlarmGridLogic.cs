@@ -1,13 +1,7 @@
 #region Using directives
-using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.Alarm;
-using FTOptix.OPCUAServer;
-using FTOptix.EventLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.WebUI;
+using UAManagedCore;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic

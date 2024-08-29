@@ -1,36 +1,37 @@
 Name: Alarms
+Id: g=37b415ecad2c6f05b46775f80e3fd2ce
 Type: FolderType
 Children:
 - Name: WarningPP1
+  Id: g=600b057fd85f8ae3cdbcda16b61ac67b
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: WarningPP2
+  Id: g=9bf4ca594a94675d83cc97bdb04d27f4
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: WarningPP3
+  Id: g=348ad455feb71b04c22c3784a74a1b98
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: WarningPP4
+  Id: g=480f889f487a561fc8047a73d9c198cc
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: ErrorPP1
+  Id: g=2d75ec3ccc7ca1a7bf93e7b969e3fd50
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: ErrorPP2
+  Id: g=ed219fc7a272de37d0dd413b275cd883
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: ErrorPP3
+  Id: g=a6b1c0170e617af5d97a51a3d7605a95
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: ErrorPP4
+  Id: g=505accf952b2ab3952833566ea4c5536
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - File: DemoA/DemoA.yaml

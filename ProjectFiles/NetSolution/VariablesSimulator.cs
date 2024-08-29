@@ -1,34 +1,36 @@
 #region Using directives
-using FTOptix.NetLogic;
 using System;
+using FTOptix.NetLogic;
 using UAManagedCore;
-using FTOptix.UI;
-using FTOptix.EventLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.WebUI;
 #endregion
 
-public class VariablesSimulator : BaseNetLogic {
+public class VariablesSimulator : BaseNetLogic
+{
 
     private PeriodicTask MyTask;
     private int iCounter;
     private double dCounter;
-    private bool bRun;
 
-    public override void Start() {
+    public override void Start()
+    {
         MyTask = new PeriodicTask(Simulation, 250, LogicObject);
         iCounter = 0;
         dCounter = 0;
         MyTask.Start();
     }
 
-    public void Simulation() {
+    public void Simulation()
+    {
+        bool bRun;
         bRun = LogicObject.GetVariable("bRunSimulation").Value;
-        if (bRun == true) {
-            if (iCounter <= 99) {
-                iCounter = iCounter + 1;
-            } else {
+        if (bRun)
+        {
+            if (iCounter <= 99)
+            {
+                iCounter++;
+            }
+            else
+            {
                 iCounter = 0;
             }
             dCounter = dCounter + 0.05;
@@ -39,8 +41,10 @@ public class VariablesSimulator : BaseNetLogic {
 
     }
 
-    public override void Stop() {
-        if (MyTask != null) {
+    public override void Stop()
+    {
+        if (MyTask != null)
+        {
             MyTask.Dispose();
             MyTask = null;
         }

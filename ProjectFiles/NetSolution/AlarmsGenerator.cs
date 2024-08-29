@@ -1,20 +1,8 @@
 #region Using directives
 using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.HMIProject;
-using FTOptix.NativeUI;
-using FTOptix.EventLogger;
 using FTOptix.NetLogic;
-using FTOptix.UI;
-using FTOptix.CoreBase;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.OPCUAServer;
-using FTOptix.Retentivity;
-using FTOptix.Alarm;
-using FTOptix.Core;
-using FTOptix.WebUI;
+using UAManagedCore;
 #endregion
 
 public class AlarmsGenerator : BaseNetLogic
@@ -33,14 +21,18 @@ public class AlarmsGenerator : BaseNetLogic
         alarmsGeneratorTask?.Dispose();
     }
 
-    private void AlarmsGeneratorMethod() {
+    private void AlarmsGeneratorMethod()
+    {
         Random rnd = new Random(DateTime.Now.Millisecond);
         for (int i = 1; i <= 9; i++)
         {
-            if (rnd.Next(0, 2) == 1) {
+            if (rnd.Next(0, 2) == 1)
+            {
                 Project.Current.GetVariable("Model/Alarms/DemoA/Variable" + i).Value = true;
-                
-            } else {
+
+            }
+            else
+            {
                 Project.Current.GetVariable("Model/Alarms/DemoA/Variable" + i).Value = false;
             }
         }

@@ -1,39 +1,40 @@
 Name: DemoA
+Id: g=2be29e48b6ee75a3f0094731a2cbe9fa
 Type: FolderType
 Children:
 - Name: Variable1
+  Id: g=d98569be6c64d3dd18c97bb260d60e07
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: Variable2
+  Id: g=41f309dc0d5e993d5c81fcfcbc6f2e0b
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: Variable3
+  Id: g=f20c77744c6b73173386bdb30d2f8b1b
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: Variable4
+  Id: g=c34046c75b39899e4a1679f9735f90ad
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: Variable5
+  Id: g=58e5618c4874909cebb82e3fa4851c20
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: Variable6
+  Id: g=ee954bdf8d73e3443f86e76eae4f42a9
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: Variable7
+  Id: g=1e5d0ee6d4924290ee4f5a42190ee9c7
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: Variable8
+  Id: g=c4ffe1ade05f6ae0659f04ef7d3d9632
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
 - Name: Variable9
+  Id: g=f68d48dd351c0025071bf6ae209c4d2f
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false

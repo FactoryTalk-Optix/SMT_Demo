@@ -7,279 +7,344 @@ Children:
   Type: BaseObjectType
   Children:
   - Name: BoardName
+    Id: g=467ce2ed476647577aa51e448b2a7013
     Type: BaseDataVariableType
     DataType: String
     Value: "FBGA228P"
   - Name: Width
+    Id: g=535e7675199284bc2192d422623deec3
     Type: BaseDataVariableType
     DataType: Float
     Value: 310.0
   - Name: Length
+    Id: g=957fcd4deac52e9a7de211ba3552458e
     Type: BaseDataVariableType
     DataType: Float
     Value: 305.0
   - Name: Heigth
+    Id: g=20fdb5085b1e30cf3c13f45ed9abe272
     Type: BaseDataVariableType
     DataType: Float
     Value: 1.600000023841858
   - Name: OriginOffset
+    Id: g=de562f2135b3d173f6831bd24d95e567
     Type: BaseDataVariableType
     DataType: String
     Value: "0;0"
   - Name: ConveySpeed
+    Id: g=22a71954a8b552ee6f993540d5c5f0ef
     Type: BaseDataVariableType
     DataType: String
     Value: "High"
   - Name: Carrier
+    Id: g=a3fb4b83c4e7ef07753501a208b3aa21
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: Index
+    Id: g=26378d765c791bf1cda19840a38d8552
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
 - Name: ObjectB
+  Id: g=912189e65329689babf8d5d71b0a8293
   Type: BaseObjectType
   Children:
   - Name: BoardName
+    Id: g=24973f9acd9d77a348874e89d0b2bc81
     Type: BaseDataVariableType
     DataType: String
     Value: "FBGA931T"
   - Name: Width
+    Id: g=be6ca99f37a4a2f38e5374f6bc289941
     Type: BaseDataVariableType
     DataType: Float
     Value: 155.5
   - Name: Length
+    Id: g=82c43981c4761cc0e5ce3860d02aa66c
     Type: BaseDataVariableType
     DataType: Float
     Value: 160.5
   - Name: Heigth
+    Id: g=a198a4a0f22357eac453371df030d598
     Type: BaseDataVariableType
     DataType: Float
     Value: 3.200000047683716
   - Name: OriginOffset
+    Id: g=329560baab13bf217216f08f59b20b6a
     Type: BaseDataVariableType
     DataType: String
     Value: "55;80"
   - Name: ConveySpeed
+    Id: g=47ae03950fecc11b188eaa573de87e03
     Type: BaseDataVariableType
     DataType: String
     Value: "Low"
   - Name: Carrier
+    Id: g=82d07a4da90442b01781fe88e90b7f1a
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
   - Name: Index
+    Id: g=53772163e689b36459557736314f81f1
     Type: BaseDataVariableType
     DataType: Int32
     Value: 1
 - Name: ObjectC
+  Id: g=37d0b834c97fc1ea96d3fa9bc1fb1b00
   Type: BaseObjectType
   Children:
   - Name: BoardName
+    Id: g=fe787035ca810c0d83c8797e298ac539
     Type: BaseDataVariableType
     DataType: String
     Value: "FBGA223B"
   - Name: Width
+    Id: g=76a02c37e8e22404ede0e4b7ffde234a
     Type: BaseDataVariableType
     DataType: Float
     Value: 155.0
   - Name: Length
+    Id: g=17647acd45c22e2c7e729dc9ed3adf40
     Type: BaseDataVariableType
     DataType: Float
     Value: 165.0
   - Name: Heigth
+    Id: g=5e8d1e7707b7b44c4bf08a19cb209240
     Type: BaseDataVariableType
     DataType: Float
     Value: 1.600000023841858
   - Name: OriginOffset
+    Id: g=665caa5e878616197d57a41c90b43a63
     Type: BaseDataVariableType
     DataType: String
     Value: "35;22"
   - Name: ConveySpeed
+    Id: g=8524848ef949b660c00cef364971cb7d
     Type: BaseDataVariableType
     DataType: String
     Value: "High"
   - Name: Carrier
+    Id: g=4654407fb61119aff415042861d3b972
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: Index
+    Id: g=619c1e5ffd0c1e666c95f0e7d8942e12
     Type: BaseDataVariableType
     DataType: Int32
     Value: 5
 - Name: ObjectD
+  Id: g=fbefac56470ffaf9b4690fe7ab3ba0cb
   Type: BaseObjectType
   Children:
   - Name: BoardName
+    Id: g=f32dcdcfea74d81a91b3b9f293c6aaa3
     Type: BaseDataVariableType
     DataType: String
     Value: "FBGA223A"
   - Name: Width
+    Id: g=cd290b7fa44ed2663cdccfd61af8dfeb
     Type: BaseDataVariableType
     DataType: Float
     Value: 100.0
   - Name: Length
+    Id: g=e79fcf4ed85607e41b78d1812e70e72a
     Type: BaseDataVariableType
     DataType: Float
     Value: 150.0
   - Name: Heigth
+    Id: g=8587b7385e9b2271cad8c705f136ea09
     Type: BaseDataVariableType
     DataType: Float
     Value: 1.899999976158142
   - Name: OriginOffset
+    Id: g=d90d9cd22abf421b77e641fd98319941
     Type: BaseDataVariableType
     DataType: String
     Value: "22;44"
   - Name: ConveySpeed
+    Id: g=9aec13f35752ecc76555aaeb278a2fd6
     Type: BaseDataVariableType
     DataType: String
     Value: "Medium"
   - Name: Carrier
+    Id: g=4e329960f12024cb474712d25d0af748
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: Index
+    Id: g=fe10a79503318faf33cd158c8565d523
     Type: BaseDataVariableType
     DataType: Int32
     Value: 9
 - Name: ObjectE
+  Id: g=1ba5cd93ba190b48ffa9586bc15caa17
   Type: BaseObjectType
   Children:
   - Name: BoardName
+    Id: g=74ebfe3f818271eefd9495288dfa815f
     Type: BaseDataVariableType
     DataType: String
     Value: "FHUA283A"
   - Name: Width
+    Id: g=a7177f08ca90aa516e8e94bc4fe3554d
     Type: BaseDataVariableType
     DataType: Float
     Value: 195.0
   - Name: Length
+    Id: g=7969b5e3672ad15ac2cb813c8a7f4ef2
     Type: BaseDataVariableType
     DataType: Float
     Value: 200.0
   - Name: Heigth
+    Id: g=3764aa8560c23a47e30755c3d1dd4bc0
     Type: BaseDataVariableType
     DataType: Float
     Value: 1.7999999523162842
   - Name: OriginOffset
+    Id: g=3ab72edc0d46ed08238fa5f43d23908e
     Type: BaseDataVariableType
     DataType: String
     Value: "15;15"
   - Name: ConveySpeed
+    Id: g=faa6f0d2568d625cf87434a047f67adf
     Type: BaseDataVariableType
     DataType: String
     Value: "Low"
   - Name: Carrier
+    Id: g=90d837275bad2f403c1edd3880342d64
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
   - Name: Index
+    Id: g=189b97cbdff2af892e66d06e2d9945d4
     Type: BaseDataVariableType
     DataType: Int32
     Value: 1
 - Name: ObjectF
+  Id: g=f98688582b9f80acab713902602f8a73
   Type: BaseObjectType
   Children:
   - Name: BoardName
+    Id: g=295d62be34201ce79b479d816283977a
     Type: BaseDataVariableType
     DataType: String
     Value: "FBGA223A"
   - Name: Width
+    Id: g=71cb9c53477c8019799210ecfa0b3e34
     Type: BaseDataVariableType
     DataType: Float
     Value: 165.0
   - Name: Length
+    Id: g=e5feaf4d6e7c58547e38c8dad9b704b6
     Type: BaseDataVariableType
     DataType: Float
     Value: 185.0
   - Name: Heigth
+    Id: g=eab8072f5486d8967222d62faec88592
     Type: BaseDataVariableType
     DataType: Float
     Value: 1.100000023841858
   - Name: OriginOffset
+    Id: g=2edc610e39ea3eed37dd54671e3aeedb
     Type: BaseDataVariableType
     DataType: String
     Value: "10;10"
   - Name: ConveySpeed
+    Id: g=68dea50b6351af61a0ead73475fa9f46
     Type: BaseDataVariableType
     DataType: String
     Value: "High"
   - Name: Carrier
+    Id: g=83d4d83352837a11ef1f985bc4555ff8
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: Index
+    Id: g=05f89088029408d0240df983e075a47f
     Type: BaseDataVariableType
     DataType: Int32
     Value: 7
 - Name: ObjectG
+  Id: g=4da884cc67d0f8e065f1295da25dbf60
   Type: BaseObjectType
   Children:
   - Name: BoardName
+    Id: g=ced0dde3c9c0627136f4630bed379299
     Type: BaseDataVariableType
     DataType: String
     Value: "ALGA228L"
   - Name: Width
+    Id: g=f402a4ecee9e999e8b9ca4d66363d557
     Type: BaseDataVariableType
     DataType: Float
     Value: 55.0
   - Name: Length
+    Id: g=fb670dc41fcd8879a9a87968e7ad0293
     Type: BaseDataVariableType
     DataType: Float
     Value: 60.0
   - Name: Heigth
+    Id: g=82956148ff3607f14b12949de7789fc9
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.800000011920929
   - Name: OriginOffset
+    Id: g=397235af82a97cdd8f925d8bcae154a9
     Type: BaseDataVariableType
     DataType: String
     Value: "0;0"
   - Name: ConveySpeed
+    Id: g=f5b68eac3500194527cfb7652509fb43
     Type: BaseDataVariableType
     DataType: String
     Value: "Medium"
   - Name: Carrier
+    Id: g=00cae66a0b1bf7e94560abb5e7b6c2ba
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
   - Name: Index
+    Id: g=8d7b6fdcea81df5e8a265ac46064a692
     Type: BaseDataVariableType
     DataType: Int32
     Value: 6
 - Name: ObjectH
+  Id: g=4732d35bb6b9177e38b31cdfe6f94cba
   Type: BaseObjectType
   Children:
   - Name: BoardName
+    Id: g=a8682a71d4786ab639824c83701d862c
     Type: BaseDataVariableType
     DataType: String
     Value: "FBGB552B"
   - Name: Width
+    Id: g=e1be9f11d99c81aa3ac26a45dc0b86a8
     Type: BaseDataVariableType
     DataType: Float
     Value: 135.0
   - Name: Length
+    Id: g=f0849513e90e4817152f33865c051a63
     Type: BaseDataVariableType
     DataType: Float
     Value: 125.0
   - Name: Heigth
+    Id: g=214e03d934343bb823bf934f166e3362
     Type: BaseDataVariableType
     DataType: Float
     Value: 1.5
   - Name: OriginOffset
+    Id: g=6c9121fad0b15da2e402c4c6e628f0f1
     Type: BaseDataVariableType
     DataType: String
     Value: "9;9"
   - Name: ConveySpeed
+    Id: g=9cf1c79611736f54a382c6db0cd510a7
     Type: BaseDataVariableType
     DataType: String
     Value: "Low"
   - Name: Carrier
+    Id: g=6add574d03f3853cf302683193b4ef05
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
   - Name: Index
+    Id: g=854eab087e044c5298ee3f4b06898751
     Type: BaseDataVariableType
     DataType: Int32
     Value: 3

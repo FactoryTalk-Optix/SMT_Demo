@@ -18,6 +18,9 @@
   <ItemGroup>
     <PackageReference Include="FftSharp" Version="1.1.6"/>
     <PackageReference Include="Lorem.NET" Version="1.0.6"/>
+    <PackageReference Include="MQTTnet" Version="3.1.2"/>
+    <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.1.2"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
   </ItemGroup>
   <Import Project="SMT_Demo.references"/>
 </Project>

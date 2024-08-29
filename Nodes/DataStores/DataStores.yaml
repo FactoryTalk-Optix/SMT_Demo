@@ -1,4 +1,5 @@
 Name: DataStores
+Id: g=9019903191733f46a89512a49bf9f7ca
 Type: DataStoresCategoryFolder
 Children:
 - Name: EmbeddedDatabase1
@@ -6,9 +7,11 @@ Children:
   Type: SQLiteStore
   Children:
   - Name: Tables
+    Id: g=94d5572047cd8b19c1d5d2f2ca8a3284
     Type: BaseObjectType
     Children:
-    - Name: AlarmsEventLogger1
+    - Name: AlarmsEventLogger
+      Id: g=9d7ae925f4e57ae05911aff454d223e7
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -24,53 +27,100 @@ Children:
         Target: ns=15;i=20
         Direction: Forward
       - Name: Columns
+        Id: g=3f9370cbdd272cbba9fb8936d00f4088
         Type: BaseObjectType
         Children:
         - Name: ActiveState_Id
+          Id: g=d2e725e5783771b635cad3c40a5a569b
           Type: StoreColumn
           DataType: Boolean
-          Value: false
         - Name: AckedState_Id
+          Id: g=77087325724ba17e08f39a61611ddc2b
           Type: StoreColumn
           DataType: Boolean
-          Value: false
         - Name: ConfirmedState_Id
+          Id: g=9dd5debd3c39ab7768c36219ee5bad11
           Type: StoreColumn
           DataType: Boolean
-          Value: false
         - Name: ConditionName
+          Id: g=f60540444ea0c349cf6e30f542ee6023
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: EnabledState_Id
+          Id: g=9a7f6e0a92c5d4328506ef8b87203319
           Type: StoreColumn
           DataType: Boolean
-          Value: false
         - Name: SourceName
+          Id: g=cde69bcec5236edae616325f5843f0bc
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: Time
+          Id: g=b11eda8bc9c73d99953a2d3df4195fe8
           Type: StoreColumn
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: 'Message_en-US'
+          Id: g=bbc6a7bf52643165d71a1f8b5393c6f8
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: 'Message_it-IT'
+          Id: g=6c2543148d53bfa0c4523b86a2fb334e
           Type: StoreColumn
           DataType: String
-          Value: ""
         - Name: Severity
+          Id: g=0d61f05d980d8b2e92647910bc483df2
           Type: StoreColumn
           DataType: UInt16
-          Value: 0
         - Name: LocalTime
+          Id: g=866b2c590d11eb44e90a8db5bfdb9fcc
           Type: StoreColumn
           DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
       - Name: RecordLimit
+        Id: g=5f9df65c3f47921a4b88f1bfa21bce90
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1001
+    - Name: EmulatorLogDataGrid
+      Id: g=53a9ed3ff3fb3f004c76a9bbaa39d3b8
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=7af2858fbac37fe659bb2eb672f564d9
+        Type: BaseObjectType
+        Children:
+        - Name: 'Message_en-US'
+          Id: g=8228463ef913f2a3b899b8f2407e6514
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_it-IT'
+          Id: g=126b647ef9b0703a02e82cc115c14c8f
+          Type: StoreColumn
+          DataType: String
+        - Name: ModuleName
+          Id: g=be75e9a2e73f4c1f0f5d4265667f5845
+          Type: StoreColumn
+          DataType: String
+        - Name: Time
+          Id: g=6fbe7119acd218c9130ae073d0dbfab8
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Level
+          Id: g=9584308e72d5122678a9310812d51e00
+          Type: StoreColumn
+          DataType: LogLevel
+      - Name: RecordLimit
+        Id: g=5b198fc1f8c22604eb170b50e4103d00
         Type: BaseDataVariableType
         DataType: UInt32
         Value: 1001
@@ -81,23 +131,24 @@ Children:
     Target: ns=17;i=33
     Direction: Forward
   - Name: MaxColumnNameLength
+    Id: g=3249d30d79badf135f097a74e6ca64c6
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: MaxColumnCount
+    Id: g=1a38debd4618fe102fd1b2dd7808e7cd
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
-    Value: 0
   - Name: DataTypeCompatibilityMap
+    Id: g=09c5ce233e5605e76ece1d9f107103db
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
-    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
   - Name: Status
+    Id: g=8faf5e30fdee8f56c320ab8fb74abe24
     Type: PropertyType
     DataType: StoreStatus
     AccessLevel: Read

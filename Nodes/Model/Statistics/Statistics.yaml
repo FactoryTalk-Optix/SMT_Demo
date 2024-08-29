@@ -1,51 +1,57 @@
 Name: Statistics
+Id: g=5108d5d61b6a21b565531d26172061e9
 Type: FolderType
 Children:
 - Name: TrendVariable1
-  Id: g=e82dc48219b989d58d721a4a7507c440
+  Id: g=6c73c2df1efaa75fa1d9d094cfdc0bee
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
   Children:
   - Name: DynamicLink
+    Id: g=d0dd8b1dcb003c59eab15630f9b35559
     Type: DynamicLink
     DataType: NodePath
     Value: "../../../NetLogic/VariablesSimulator/iSin"
     Children:
     - Name: Mode
+      Id: g=d5a5e892085a3f458d1c6eddf5283338
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
 - Name: TrendVariable2
+  Id: g=2be41e83ef4a267878c7d9acd16fd2b9
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
   Children:
   - Name: DynamicLink
+    Id: g=9061612be2d439a7522a0d62fde44c54
     Type: DynamicLink
     DataType: NodePath
     Value: "../../../NetLogic/VariablesSimulator/iRamp"
     Children:
     - Name: Mode
+      Id: g=5ec2f4961e13a4929e0dfee159761874
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
 - Name: TrendVariable3
-  Id: g=c18267dd44a75aa67c2d1f8f9596bae5
+  Id: g=4377a574eab7895fd69363e00b8c3ddd
   Type: BaseDataVariableType
   DataType: Int32
-  Value: 0
   Children:
   - Name: DynamicLink
+    Id: g=7b74a002d32dfc88a84fa6de49293317
     Type: DynamicLink
     DataType: NodePath
     Value: "../../../NetLogic/VariablesSimulator/iCos"
     Children:
     - Name: Mode
+      Id: g=0809bbb01a6942da95541960f68a0643
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
 - Name: ModelGraph1
+  Id: g=83370e4d7de9784e30f836e6632776f0
   Type: BaseDataVariableType
   DataType: Float
   ValueRank: 2
@@ -267,18 +273,22 @@ Children:
     DataType: Int32
     Value: 55
   - Name: 'BBQ55M      '
+    Id: g=6ec493ef097033bdd4be104f986b9676
     Type: BaseDataVariableType
     DataType: Int32
     Value: 10
   - Name: 'BRM12M      '
+    Id: g=b6996c0b606303b6f5791ec2ee4db813
     Type: BaseDataVariableType
     DataType: Int32
     Value: 75
   - Name: 'BGP06AB      '
+    Id: g=43238e988fe951e1ea27d6d322957f1e
     Type: BaseDataVariableType
     DataType: Int32
     Value: 33
   - Name: 'BGA06AL      '
+    Id: g=38c5d4e898ceca8a2557dda53dcabc5a
     Type: BaseDataVariableType
     DataType: Int32
     Value: 45
@@ -287,22 +297,27 @@ Children:
   Type: BaseObjectType
   Children:
   - Name: 'CDA88M      '
+    Id: g=684e5e7fb080d63ce46cba9f1770438c
     Type: BaseDataVariableType
     DataType: Int32
     Value: 24
   - Name: 'CDA09M      '
+    Id: g=fcb079988e8e9a18b12b620243edd09c
     Type: BaseDataVariableType
     DataType: Int32
     Value: 66
   - Name: 'CAZ09M      '
+    Id: g=03b89175328ab81fe4116ed33eac7375
     Type: BaseDataVariableType
     DataType: Int32
     Value: 42
   - Name: 'CLK11U      '
+    Id: g=76dab3333664edcf541d3182766a4364
     Type: BaseDataVariableType
     DataType: Int32
     Value: 89
   - Name: 'CLK45P      '
+    Id: g=6f79bd461d360dd22dd9c3b4e8056a70
     Type: BaseDataVariableType
     DataType: Int32
     Value: 99
@@ -311,22 +326,27 @@ Children:
   Type: BaseObjectType
   Children:
   - Name: 'Mon   '
+    Id: g=ce2b35c521194ae837310b9163c7dfd1
     Type: BaseDataVariableType
     DataType: Int32
     Value: 10
   - Name: 'Tue   '
+    Id: g=295a9458f450fb95633fcf016d2d9b4a
     Type: BaseDataVariableType
     DataType: Int32
     Value: 15
   - Name: 'Wed   '
+    Id: g=4139f23fa84095cc6115716eb20455d0
     Type: BaseDataVariableType
     DataType: Int32
     Value: 12
   - Name: 'Thu   '
+    Id: g=de55b3e7db0ebb7340c4388c206cba51
     Type: BaseDataVariableType
     DataType: Int32
     Value: 9
   - Name: 'Fri   '
+    Id: g=558187697713a28adf2b4ffd85580fa5
     Type: BaseDataVariableType
     DataType: Int32
     Value: 8
@@ -335,22 +355,27 @@ Children:
   Type: BaseObjectType
   Children:
   - Name: 'Mon   '
+    Id: g=5133078bc347db3a412e0540b9deb377
     Type: BaseDataVariableType
     DataType: Int32
     Value: 3
   - Name: 'Tue   '
+    Id: g=0df2075b60e60b4fc298199fa989639c
     Type: BaseDataVariableType
     DataType: Int32
     Value: 6
   - Name: 'Wed   '
+    Id: g=4531c0dd144f5bd3d5a864d99f18c8dd
     Type: BaseDataVariableType
     DataType: Int32
     Value: 4
   - Name: 'Thu   '
+    Id: g=98ba2b6c85a5577185bec2d2a27e4c00
     Type: BaseDataVariableType
     DataType: Int32
     Value: 2
   - Name: 'Fri   '
+    Id: g=b0dc15757b2a0816de725a30cd5dad89
     Type: BaseDataVariableType
     DataType: Int32
     Value: 2

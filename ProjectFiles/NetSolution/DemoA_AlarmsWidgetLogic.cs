@@ -1,21 +1,10 @@
 #region Using directives
 using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
+using FTOptix.Alarm;
 using FTOptix.HMIProject;
-using FTOptix.NativeUI;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.CoreBase;
-using FTOptix.OPCUAServer;
-using FTOptix.Retentivity;
-using FTOptix.Alarm;
-using FTOptix.EventLogger;
-using FTOptix.Core;
-using System.Linq;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.WebUI;
+using UAManagedCore;
 #endregion
 
 public class DemoA_AlarmsWidgetLogic : BaseNetLogic
@@ -34,22 +23,27 @@ public class DemoA_AlarmsWidgetLogic : BaseNetLogic
         alarmsGeneratorTask?.Dispose();
     }
 
-    private void AlarmsGenerator() {
+    private void AlarmsGenerator()
+    {
         Random rnd = new Random(DateTime.Now.Millisecond);
         int activeAlarms = 0;
         for (int i = 1; i <= 9; i++)
         {
-            if (Project.Current.GetVariable("Model/Alarms/DemoA/Variable" + i).Value) {
+            if (Project.Current.GetVariable("Model/Alarms/DemoA/Variable" + i).Value)
+            {
                 ++activeAlarms;
                 var objectInPage = Owner.Get<AlarmWidgetType>("VerticalLayout1/Alarm" + i) ?? null;
-                if (objectInPage == null) {
+                if (objectInPage == null)
+                {
                     objectInPage = InformationModel.Make<AlarmWidgetType>("Alarm" + i);
                     objectInPage.GetVariable("InputAlarm").Value = Project.Current.Get<DigitalAlarm>("Alarms/LineOverview/DigitalAlarm" + i).NodeId;
                     objectInPage.GetVariable("Time").Value = DateTime.Now;
                     Owner.Get<ColumnLayout>("VerticalLayout1").Add(objectInPage);
                 }
-                
-            } else {
+
+            }
+            else
+            {
                 Owner.Get("VerticalLayout1/Alarm" + i)?.Delete();
             }
         }

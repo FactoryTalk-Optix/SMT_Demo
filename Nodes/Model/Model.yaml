@@ -1,13 +1,7 @@
 Name: Model
+Id: g=c24a0d497ea71d276bf8dd6ea17891a5
 Type: ModelCategoryFolder
 Children:
-- Name: LocaleChanged
-  Type: VariableChangedEventDispatcher
-  Children:
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Locale"
 - File: Cycle/Cycle.yaml
 - File: Statistics/Statistics.yaml
 - File: Alarms/Alarms.yaml
@@ -22,110 +16,69 @@ Children:
   Id: g=5b345bceba2f0e20ffb390a13a22c2f4
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: false
-- Name: Variable1Changed
-  Type: VariableChangedEventDispatcher
+- Name: BrokerSettings
+  Id: g=1a79c9c981be40147f9bc4959f873989
+  Type: BaseObjectType
   Children:
-  - Name: VariableNodePath
-    Type: BaseVariableType
-    DataType: NodePath
-    Value: "../Variable1"
-  - Name: VariableValueChangedEventHandler1
-    Type: EventHandler
+  - Name: Address
+    Id: g=bde18387a44a468cfeabf98cfcb0c925
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "test.mosquitto.org"
+  - Name: Port
+    Id: g=9f4d82763b894bcb00dfc47cb56c1973
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1883
+  - Name: EnablePublisher
+    Id: g=0c08e5ea6aa2496387f4a18d9a364221
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: EnableSubscriber
+    Id: g=c6db39b8bab7cee9f23bf495defb411e
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: PublisherConnected
+    Id: g=13845725a161fc3f49efd82707a637d7
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: PublisherColorIcon
+    Id: g=ff733212c408e61ed10d652ce2df524a
+    Type: BaseDataVariableType
+    DataType: Color
     Children:
-    - Name: ListenEventType
-      Type: PropertyType
-      DataType: NodeId
-      Value: {"Id":42,"Namespace":3}
-    - Name: MethodsToCall
-      Type: BaseObjectType
+    - Name: ConditionalConverter1
+      Id: g=fdcad2004c9a8a694fbe1699771f8958
+      Type: ConditionalConverter
       Children:
-      - Name: MethodContainer1
-        Type: BaseObjectType
+      - Name: Condition
+        Id: g=65a5e4f1e9c44bca5e889fbe621cabd0
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
         Children:
-        - Name: ns=3;ObjectPointer
-          Type: NodePointer
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: {"Id":58}
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../../../../Commands/VariableCommands@NodeId"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              Value: 2
-        - Name: ns=3;Method
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "Set"
-        - Name: InputArguments
-          Type: BaseObjectType
-          Children:
-          - Name: VariableToModify
-            Type: BaseDataVariableType
-            DataType: VariablePointer
-            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-            Value: {"IdType":2,"Id":"075a63194ed42a8c89c47952185d74d9","Namespace":22}
-          - Name: Value
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-            Value: false
-          - Name: ArrayIndex
-            Type: BaseDataVariableType
-            DataType: UInt32
-            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
-            ValueRank: ScalarOrOneDimension
-            Value: 0
-    - Name: EventArguments
-      Type: VariableValueChangedEvent
-      Children:
-      - Name: VariableNodeId
-        Type: BaseVariableType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: NewValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: OldValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: EventId
-        Type: PropertyType
-        DataType: ByteString
-        Value: ""
-      - Name: EventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: SourceNode
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: SourceName
-        Type: PropertyType
-        DataType: String
-        Value: ""
-      - Name: Time
-        Type: PropertyType
-        DataType: UtcTime
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: ReceiveTime
-        Type: PropertyType
-        DataType: UtcTime
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: Message
-        Type: PropertyType
-        DataType: LocalizedText
-        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      - Name: Severity
-        Type: PropertyType
-        DataType: UInt16
-        Value: 0
+        - Name: DynamicLink
+          Id: g=2b38393fca278002eeea07fa632b3934
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PublisherConnected"
+      - Name: TrueValue
+        Id: g=429302bccfed2161292b8d3b979d9638
+        Type: BaseDataVariableType
+        DataType: Color
+        ReferenceType: HasParameter
+        Value: "#c6e5b4"
+      - Name: FalseValue
+        Id: g=a7dcbf0737c0ad2a36a43af7502903ba
+        Type: BaseDataVariableType
+        DataType: Color
+        ReferenceType: HasParameter
+        Value: "#ea9dae"
+  - Name: ConnectionAvailable
+    Id: g=c25c53a63d3e39d4175014ee9fda9e6e
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ShowInUI
+    Id: g=78d86e8006348a107cb62c7121516cb2
+    Type: BaseDataVariableType
+    DataType: Boolean

@@ -1,68 +1,84 @@
 Name: NetLogic
+Id: g=134735834078a97be631f314cf7861bf
 Type: NetLogicCategoryFolder
 Children:
 - Name: LocalizedClockLogic
+  Id: g=9d9fd63af403ab31b67e489743d0556a
   Type: NetLogic
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
   - Name: Time
+    Id: g=b9951f34714d80271ef946e2b774d2ba
     Type: BaseDataVariableType
     DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: UTCTime
+    Id: g=5e04634f23a309626eee4c7edc591aee
     Type: BaseDataVariableType
     DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: CurrentLocale
+    Id: g=f050712bf1a205063368b292b4d0cdd0
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
     Children:
     - Name: DynamicLink
+      Id: g=8befb8da5fe4ecfd78f2d3fdaa2fabfa
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../Model/Locale"
       Children:
       - Name: Mode
+        Id: g=346a5bf828513c222f3f72ecc1a14419
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LocalizedTime
-    Id: g=611ba8838fca6993410e1c3abf6a96d9
+    Id: g=53dd4929fe26be7c8062a9f79bee49d7
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
   - Name: LocalizedDate
-    Id: g=e4107f4a8feac4485e709de78c9a4276
+    Id: g=ef13abefd90bb3719f909f3e69f68a81
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
 - Name: VariablesSimulator
+  Id: g=9fad1894cda1197f0300ce420828794c
   Type: NetLogic
   Children:
   - Name: iSin
+    Id: g=7dfa6e201976c76e7d268503215d7d7d
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: iCos
+    Id: g=3d17c64b76486f3b16f3876e75d81e27
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: iRamp
+    Id: g=ba66bf4f3fc681b9ff5f7d1de3c4451e
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
   - Name: bRunSimulation
+    Id: g=f113a503f1f5764b05b83afd35178e2e
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
     Children:
     - Name: DynamicLink
+      Id: g=fcbdcbaa2a96ec4f3351e9182d57c790
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../Model/Cycle/Start"
       Children:
       - Name: Mode
+        Id: g=cb137432a814ebae98c305c8e88e557f
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
+- Name: MQTT_Publisher
+  Id: g=51b3ae32168dfa5751650ba80b45afc6
+  Type: NetLogic
+- Name: MQTT_Subscriber
+  Id: g=03cd804ce5c5a18660ab666214a0eb70
+  Type: NetLogic
+- Name: AutoRestartDemo
+  Id: g=fafbe2b6aa0aa25c6aad962ab803c2d9
+  Type: NetLogic

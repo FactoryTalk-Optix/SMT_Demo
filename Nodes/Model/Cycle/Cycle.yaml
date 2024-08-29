@@ -1,4 +1,5 @@
 Name: Cycle
+Id: g=29c9387f0b755e42930995fce36ef29c
 Type: FolderType
 Children:
 - Name: Start
@@ -7,4 +8,310 @@ Children:
   DataType: Boolean
   Value: true
 - File: LiveData/LiveData.yaml
-- File: Status/Status.yaml
+- Name: StartTransitioned
+  Id: g=6b886b114693f1cbb861c60ddd488b76
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Id: g=bb79c235035f39439c47816b78de54bb
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Id: g=26a3206e4f63c2d16463f826d587c335
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Id: g=8f5fd8b5cc421362cf3969aeaef3c022
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Start"
+  - Name: VariableTransitionEventHandler1
+    Id: g=7364fc0c103a641bebed779da7f58a00
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Id: g=98dc03e1ea3340cdd4e353ad15254bbf
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
+    - Name: MethodsToCall
+      Id: g=21c8d8ef79f529fd2d07f0e35129d62c
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Id: g=00090a8d0e68e214ccacb0e02c7d4b4a
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Id: g=c4df73c69d106fad367a89830889bbbf
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Id: g=4a985d5711f9114946bbf6cbbebda775
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Id: g=682b6b73cafbf9d3cf1acdcd7b1d8a25
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Id: g=afc2d09753c707b3444299f81766026c
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=3;Method
+          Id: g=04398e4068964e35c00d9ecc102317c0
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=bc46d7142ef7ffbf4478cb27ad3fbde4
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=3b0df3dc170331762a3b32faddd638ea
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/SMT_Demo/Model/Cycle/LiveData/ReelCounter1"
+          - Name: Value
+            Id: g=7648c977b06f2875703a633ef0920c38
+            Type: BaseDataVariableType
+            DataType: Int32
+            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+            Children:
+            - Name: DynamicLink
+              Id: g=bad5421295582b18ce878179ace660ac
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../LiveData/ReelCounter1/EURange/High"
+          - Name: ArrayIndex
+            Id: g=8521293118ee483c34dc947be5a4c58d
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+      - Name: MethodContainer2
+        Id: g=c6257b84c0dfbfacb3474ed7cb998524
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Id: g=31b8fe4be8991bb3058fa1a9379dcfb8
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Id: g=2f98067cae49a641d1a05a833f64d79a
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Id: g=8ee4237d000c82d35e94db19bd34a596
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Id: g=c13d348fbea7177885f8bdcac279db19
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=3;Method
+          Id: g=aac7e458bdebd618d540148fc3b37063
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=c2c18da84ddb7da95c0fd77b97d084f7
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=883965d417019b5d4a4c9ebd3af5c024
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/SMT_Demo/Model/Cycle/LiveData/ReelCounter2"
+          - Name: Value
+            Id: g=03dab645ac21f338e0d4e454055a33eb
+            Type: BaseDataVariableType
+            DataType: Int32
+            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+            Children:
+            - Name: DynamicLink
+              Id: g=61ab1bc026b42f87d5f8cff172966195
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../LiveData/ReelCounter2/EURange/High"
+          - Name: ArrayIndex
+            Id: g=11a7a1d79e06daacafab3db8ed48220f
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+      - Name: MethodContainer3
+        Id: g=16090dc7df4492cf4364f1bae8b2ad3b
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Id: g=3e5e303d9ccea3e2195622c1e37685a6
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Id: g=5891b9f28ba2b752793412638be28c13
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Id: g=193c70b1958cf56605ea59cf2efe10ba
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Id: g=d22f8446e7f7fd3f3fed4c3567ace59f
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=3;Method
+          Id: g=ad3794e1071f55f65e9f51828333bb59
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=1fd0238abb7cd72b494c47c422de267e
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=2e083918e7d12aa65dc1c7d00398346f
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/SMT_Demo/Model/Cycle/LiveData/ReelCounter3"
+          - Name: Value
+            Id: g=c100b0c37a677f6a2fac978d52d79818
+            Type: BaseDataVariableType
+            DataType: Int32
+            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+            Children:
+            - Name: DynamicLink
+              Id: g=cbb9581ba5b76d0cdbb30fb191c8b35a
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../LiveData/ReelCounter3/EURange/High"
+          - Name: ArrayIndex
+            Id: g=f6f39342417585e2eda45e6c7d6daad2
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+      - Name: MethodContainer4
+        Id: g=d1076bc2c1f1f91be99489d7ab825057
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Id: g=0134bfe9384a6274c31eee7945f8235e
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Id: g=7f4f199980fb1586b850d4e0c42799d4
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Id: g=8bb8ad2521155f70f219b734552cd529
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Id: g=77a925c1467c310a3ea5cb2430b8bbd2
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=3;Method
+          Id: g=e57faf12f051bc44d203bd45d0462f55
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Id: g=2a288a9a0be5e1eac135dbd371188d5f
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Id: g=2fd5c895154ddf67d5305e14577e0b3b
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/SMT_Demo/Model/Cycle/LiveData/ReelCounter4"
+          - Name: Value
+            Id: g=7f10f7665df666d167fc7f302ac82a76
+            Type: BaseDataVariableType
+            DataType: Int32
+            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+            Children:
+            - Name: DynamicLink
+              Id: g=a4d7b77997041f197c807e2ec7a520a5
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../LiveData/ReelCounter4/EURange/High"
+          - Name: ArrayIndex
+            Id: g=8f35d3df5821ce18b6e3c3c9d67697b7
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Id: g=b4e9752005978ebbcee45a83695d7402
+      Type: VariableTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Id: g=29a66d831d632cfb76de0e0da0996004
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Id: g=71757c9c55739778cc6eb9f4ae7640c3
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Id: g=a24f2da8f5b0b5f6b27efb42e9740d88
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Id: g=b54bb7b06b6e3e897d2129a460f73510
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Id: g=a937152951e5bdfdd906455831f4c264
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Id: g=d43600b39feb973a235a87fa58b473e1
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Id: g=de98a7f27880565d49d4371594972c79
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Id: g=ee02f799cc08ebae9b680f3afd738f43
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Id: g=1067286212f7a51e2d5a83a890e2607c
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Id: g=ab6bb324a24dd133a49b981541b6c42e
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Id: g=8377cb956f080f6ceafe2c58d5927423
+        Type: PropertyType
+        DataType: UInt16

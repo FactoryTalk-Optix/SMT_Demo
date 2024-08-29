@@ -1,0 +1,90 @@
+version: '3.8'
+services:
+  nginx-proxy-manager:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    container_name: nginxproxymanager
+    ports:
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+      #- '443:81'
+    #environment:
+      #DISABLE_IPV6: 'true'
+    volumes:
+      - nginx-proxy-data:/data
+      - nginx-proxy-certs:/etc/letsencrypt
+
+  mosquitto-broker:
+    container_name: mosquitto
+    image: eclipse-mosquitto
+    volumes:
+    - "mosquitto_config:/mosquitto/config"
+    - "mosquitto_log:/mosquitto/log"
+    - "mosquitto_data:/mosquitto/data"
+    restart: unless-stopped
+    ports:
+    - "1883:1883"
+
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb
+    ports:
+      - '8086:8086'
+    volumes:
+      - influxdb-storage:/var/lib/influxdb2
+    restart: unless-stopped
+    environment:
+      - INFLUXDB_DB=master
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=admin_pass
+  chronograf:
+    container_name: influxdb-cronograf
+    image: chronograf:latest
+    ports:
+      - '127.0.0.1:8888:8888'
+    volumes:
+      - chronograf-storage:/var/lib/chronograf
+    depends_on:
+      - influxdb
+    restart: unless-stopped
+    environment:
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_USERNAME=admin
+      - INFLUXDB_PASSWORD=admin_pass
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - 9090:9090
+    restart: unless-stopped
+    volumes:
+      - prometheus:/etc/prometheus
+      - prom_data:/prometheus
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=asem
+      - GF_SECURITY_ADMIN_PASSWORD=Password01
+    volumes:
+      - grafana:/etc/grafana/provisioning/datasources
+
+volumes:
+  nginx-proxy-data:
+  nginx-proxy-certs:
+  mosquitto_config:
+  mosquitto_log:
+  mosquitto_data:
+  influxdb-storage:
+  chronograf-storage:
+  grafana-storage:
+  prom_data:
+  grafana:
+  prometheus:

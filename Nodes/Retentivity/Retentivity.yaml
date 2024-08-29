@@ -1,31 +1,162 @@
 Name: Retentivity
+Id: g=9082fed8abe485b0607a461fe12bc34a
 Type: RetentivityCategoryFolder
 Children:
 - Name: SecurityRetentivityStorage
+  Id: g=09d93b27c3984e5d7f34539f23e6063e
   Type: RetentivityStorage
   Children:
   - Name: Nodes
+    Id: g=2fb91d8f08adbfff8a021ccd84c2da8e
     Type: BaseObjectType
     Children:
     - Name: Node1
+      Id: g=3cf2df0c91541971a2fe86627e845639
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"8908c899d2a03b2619ef335ab2c6df99","Namespace":22}
+      Value: "/Objects/SMT_Demo/Security"
       Children:
       - Name: Kind
+        Id: g=540b59330f8c2fd612f544c594764dd6
         Type: PropertyType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
       - Name: NodeClass
+        Id: g=e548ee7bdebde1998a11863d87c5e7ee
         Type: PropertyType
         DataType: NodePointerNodeClass
         Value: 2
   - Name: WriteDelay
+    Id: g=f82924eb341e211e6ff4d7754b8ccc42
     Type: BaseDataVariableType
     DataType: Duration
     ReferenceType: HasProperty
-    Value: "0:00:00:0.0000000"
   - Name: DeltaObserverEnabled
+    Id: g=905de0d7e7635b20074e2e8110655efd
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true
+- Name: MQTTRetentivityStorage
+  Id: g=9001204f4509e702122ac365ca655ea4
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Id: g=378a85e9d245e0318b44f7bd3f13ffb3
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Id: g=8cbc5a72dbcde50e39125701997c5d69
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/SMT_Demo/Model/BrokerSettings/Address"
+      Children:
+      - Name: Kind
+        Id: g=ac4777cbfb772c7147c8aa4aa0802939
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Id: g=746f64f4bf980f5fc2c869d5c4aa9ad2
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node2
+      Id: g=dd7722b47c3f37ca371daf5a5d0f4ff9
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/SMT_Demo/Model/BrokerSettings/Port"
+      Children:
+      - Name: Kind
+        Id: g=49286ddd298fc7f275e150d7ffb95ede
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Id: g=31015e1426f8915079498126326d6ee8
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+      - Name: Node1
+        Id: g=5fd443462f7e4a4173d509a0e2fc8063
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/SMT_Demo/Model/BrokerSettings/Address"
+        Children:
+        - Name: Kind
+          Id: g=450991e5f59aca584baebb0dc6711fd7
+          Type: PropertyType
+          DataType: NodeId
+        - Name: NodeClass
+          Id: g=a10298d31d8ac3c9efb8946e27a13527
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+          Value: 2
+    - Name: Node3
+      Id: g=a0fc41ad13c1df1eb03cd2a39998770c
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/SMT_Demo/Model/BrokerSettings/EnablePublisher"
+      Children:
+      - Name: Kind
+        Id: g=a7c21ff6f2841cdb544e94b8a3fa6247
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Id: g=92fb216e453037617ffa412bed0bc43a
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+      - Name: Node1
+        Id: g=e1e601d79596afdd7f521c6e346f63e8
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/SMT_Demo/Model/BrokerSettings/Address"
+        Children:
+        - Name: Kind
+          Id: g=6000f962d6eb751fa4885731dfb3291e
+          Type: PropertyType
+          DataType: NodeId
+        - Name: NodeClass
+          Id: g=8709415e6b02e6cdaf53042a9634d2d3
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+          Value: 2
+    - Name: Node4
+      Id: g=306458125df5b2818a419a357ba3706a
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/SMT_Demo/Model/BrokerSettings/EnableSubscriber"
+      Children:
+      - Name: Kind
+        Id: g=eb693f34ea4cd7bb22905a34f39b6f64
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Id: g=6b5b9cb83a1461e06c5e02bc0611b0ca
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+      - Name: Node1
+        Id: g=0a1f2c5bf1edbecef0b9715a31f385c0
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/SMT_Demo/Model/BrokerSettings/Address"
+        Children:
+        - Name: Kind
+          Id: g=a6baa410af25eb5530aac5ab19a6991a
+          Type: PropertyType
+          DataType: NodeId
+        - Name: NodeClass
+          Id: g=45942cf2230b76ccdc1317d3bada0789
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+          Value: 2
+  - Name: WriteDelay
+    Id: g=92a3c36d578d2bbdbb690d1b174d9958
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+    Value: "0:00:00:1.0000000"
+  - Name: DeltaObserverEnabled
+    Id: g=d0bdd2b66757e63f4e4605ab911e0d41
     Type: BaseDataVariableType
     DataType: Boolean
     ReferenceType: HasProperty

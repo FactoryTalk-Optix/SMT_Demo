@@ -1,20 +1,7 @@
 #region Using directives
-using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
 using FTOptix.NetLogic;
-using FTOptix.NativeUI;
-using FTOptix.HMIProject;
 using FTOptix.UI;
-using FTOptix.CoreBase;
-using FTOptix.Core;
-using FTOptix.Retentivity;
-using FTOptix.Alarm;
-using FTOptix.OPCUAServer;
-using FTOptix.EventLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.WebUI;
+using UAManagedCore;
 #endregion
 
 public class LoginChangePasswordFormOutputMessageLogic : BaseNetLogic
@@ -54,7 +41,7 @@ public class LoginChangePasswordFormOutputMessageLogic : BaseNetLogic
             taskStarted = false;
         }
 
-        task.Start();
+        task?.Start();
         taskStarted = true;
     }
 

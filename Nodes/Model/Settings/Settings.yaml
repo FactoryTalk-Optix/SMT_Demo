@@ -1,4 +1,5 @@
 Name: Settings
+Id: g=8ab15b08c537db4ba91a6357661f93ee
 Type: FolderType
 Children:
 - Name: AnalogVariable3
@@ -9,71 +10,42 @@ Children:
   Value: 0.27000001072883606
   Children:
   - Name: EURange
+    Id: g=020b089e44a8c43a3019f7bb0ba5b25e
     Type: RangeType
-    DataType: EURange
-    Value: 
-     {
-      "TypeId": {
-       "Id": 884
-      },
-      "Body": {
-       "low": 0.0,
-       "high": 0.0
-      }
-     }
+    DataType: Range
     Children:
     - Name: Low
-      Id: g=b1e0d3776aff0cd81444b23953ebf2a4
+      Id: g=4c59a6b48f36ea6dbb6da817a3221296
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 0.0
     - Name: High
-      Id: g=c5154f23fc4fce3542391fd8982c3e6f
+      Id: g=2a381a8ba779357993bf90818f1cef94
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
       Value: 1.0
   - Name: EngineeringUnits
+    Id: g=d74305dca9798354212aaa04b8196fac
     Type: EUInformationType
     DataType: EUInformation
-    Value: 
-     {
-      "TypeId": {
-       "Id": 887
-      },
-      "Body": {
-       "namespaceUri": "",
-       "unitId": 0,
-       "displayName": {
-        "NamespaceIndex": -1,
-        "LocaleId": "",
-        "Text": ""
-       },
-       "description": {
-        "NamespaceIndex": -1,
-        "LocaleId": "",
-        "Text": ""
-       }
-      }
-     }
     Children:
     - Name: UnitId
+      Id: g=2136a260d2a6d9ee1db1aff3369207b8
       Type: BaseVariableType
       DataType: Int32
       ReferenceType: HasProperty
       Value: 5066817
     - Name: DisplayName
-      Id: g=461eb4038bd77f946447cceb16e1611f
+      Id: g=d16c7d65a77c984736a8c5813b5f9aa4
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Description
+      Id: g=ee5fec0301c1d77c8f3037137700bf72
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
 - Name: AnalogVariable2
   Id: g=f7f6b9cf162acea9e8d5e2196d02e474
   Type: AnalogItemType
@@ -82,141 +54,82 @@ Children:
   Value: 0.11999999731779099
   Children:
   - Name: EURange
+    Id: g=7d452430f8456fc98a184d5612b1bf5f
     Type: RangeType
-    DataType: EURange
-    Value: 
-     {
-      "TypeId": {
-       "Id": 884
-      },
-      "Body": {
-       "low": 0.0,
-       "high": 0.0
-      }
-     }
+    DataType: Range
     Children:
     - Name: Low
-      Id: g=3a5ff337b6998abb236f888be64da4a6
+      Id: g=4328668a9b1b500a7e3637ed6b1fdcb3
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 0.0
     - Name: High
-      Id: g=87a1567df538fb7c98b2251a067071f1
+      Id: g=a17c0d46cb847c2c0a789eb6e66909d4
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
       Value: 0.2
   - Name: EngineeringUnits
+    Id: g=441803e847da20d10711ed5bbb7ffed5
     Type: EUInformationType
     DataType: EUInformation
-    Value: 
-     {
-      "TypeId": {
-       "Id": 887
-      },
-      "Body": {
-       "namespaceUri": "",
-       "unitId": 0,
-       "displayName": {
-        "NamespaceIndex": -1,
-        "LocaleId": "",
-        "Text": ""
-       },
-       "description": {
-        "NamespaceIndex": -1,
-        "LocaleId": "",
-        "Text": ""
-       }
-      }
-     }
     Children:
     - Name: UnitId
+      Id: g=302a2a810011c06b2110a41176de484d
       Type: BaseVariableType
       DataType: Int32
       ReferenceType: HasProperty
       Value: 5066817
     - Name: DisplayName
-      Id: g=168f535549c991581b38053b3171b168
+      Id: g=e882bc95c833f9980cd216c7613a51cf
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Description
+      Id: g=828202d72667c701b58a8f6bd31b5938
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
 - Name: AnalogVariable1
   Id: g=bb3e4e96d88718c9ae61a8524946cef2
   Type: AnalogItemType
   DataType: Float
   DisplayName: {"NamespaceIndex":22,"TextId":"Vacuum"}
-  Value: 0.0
   Children:
   - Name: EURange
+    Id: g=4db1f4b27d14e09d0fd165bf57e7f55d
     Type: RangeType
-    DataType: EURange
-    Value: 
-     {
-      "TypeId": {
-       "Id": 884
-      },
-      "Body": {
-       "low": 0.0,
-       "high": 0.0
-      }
-     }
+    DataType: Range
     Children:
     - Name: Low
-      Id: g=5c33f0ae9873780c50cad19a21263630
+      Id: g=707c145b39b1d753825785f2c98efef3
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
       Value: -100.0
     - Name: High
-      Id: g=729cae30ba8c14c47b89f74c46e565ef
+      Id: g=0900e03d84f35f373d7ecfe2e361db93
       Type: BaseVariableType
       DataType: Double
       ReferenceType: HasProperty
-      Value: 0.0
   - Name: EngineeringUnits
+    Id: g=348c1ed4178cf84a4bd71f9fb18071f8
     Type: EUInformationType
     DataType: EUInformation
-    Value: 
-     {
-      "TypeId": {
-       "Id": 887
-      },
-      "Body": {
-       "namespaceUri": "",
-       "unitId": 0,
-       "displayName": {
-        "NamespaceIndex": -1,
-        "LocaleId": "",
-        "Text": ""
-       },
-       "description": {
-        "NamespaceIndex": -1,
-        "LocaleId": "",
-        "Text": ""
-       }
-      }
-     }
     Children:
     - Name: UnitId
+      Id: g=40db8ccb3cb47413669da5a40b763b7f
       Type: BaseVariableType
       DataType: Int32
       ReferenceType: HasProperty
       Value: 4935745
     - Name: DisplayName
-      Id: g=6f00eb9b719b705a1d36ce538874f3d4
+      Id: g=68a51d765dddcbfb080c2b7cb03c8598
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
     - Name: Description
+      Id: g=fd9489c55db7665f3176b70e26ed053f
       Type: BaseVariableType
       DataType: LocalizedText
       ReferenceType: HasProperty
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}

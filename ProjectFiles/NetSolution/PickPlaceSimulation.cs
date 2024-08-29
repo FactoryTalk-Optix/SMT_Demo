@@ -1,42 +1,27 @@
 #region Using directives
 using System;
-using UAManagedCore;
-using OpcUa = UAManagedCore.OpcUa;
-using FTOptix.HMIProject;
-using FTOptix.NativeUI;
-using FTOptix.Alarm;
-using FTOptix.NetLogic;
-using FTOptix.UI;
-using FTOptix.CoreBase;
-using FTOptix.Retentivity;
-using FTOptix.Core;
 using System.Threading;
-using FTOptix.OPCUAServer;
-using FTOptix.EventLogger;
-using FTOptix.SQLiteStore;
-using FTOptix.Store;
-using FTOptix.WebUI;
+using FTOptix.HMIProject;
+using FTOptix.NetLogic;
+using UAManagedCore;
 #endregion
 
 public class PickPlaceSimulation : BaseNetLogic
 {
-    private PeriodicTask PickPlaceTask;
-    Int32 incrementPickPlace1 = 0;
-    Int32 incrementPickPlace2 = 0;
-    Int32 incrementPickPlace3 = 0;
+    private PeriodicTask pickPlaceTask;
     Random rnd;
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
         rnd = new Random();
-        PickPlaceTask = new PeriodicTask(PickPlaceProgressTask, 750, LogicObject);
-        PickPlaceTask.Start();
+        pickPlaceTask = new PeriodicTask(PickPlaceProgressTask, 750, LogicObject);
+        pickPlaceTask.Start();
     }
 
     public override void Stop()
     {
         // Insert code to be executed when the user-defined logic is stopped
-        PickPlaceTask?.Dispose();
+        pickPlaceTask?.Dispose();
     }
 
     private void PickPlaceProgressTask()
@@ -49,7 +34,7 @@ public class PickPlaceSimulation : BaseNetLogic
         {
             if (pickPlaceProgress1.Value < 100)
             {
-                pickPlaceProgress1.Value = pickPlaceProgress1.Value + rnd.Next(0, 3);
+                pickPlaceProgress1.Value += rnd.Next(0, 3);
                 Thread.Sleep(1);
                 if (pickPlaceProgress1.Value >= 100)
                 {
@@ -58,7 +43,7 @@ public class PickPlaceSimulation : BaseNetLogic
             }
             if (pickPlaceProgress2.Value < 100)
             {
-                pickPlaceProgress2.Value = pickPlaceProgress2.Value + rnd.Next(0, 3);
+                pickPlaceProgress2.Value += rnd.Next(0, 3);
                 Thread.Sleep(1);
                 if (pickPlaceProgress2.Value >= 100)
                 {
@@ -67,34 +52,21 @@ public class PickPlaceSimulation : BaseNetLogic
             }
             if (pickPlaceProgress3.Value < 100)
             {
-                pickPlaceProgress3.Value = pickPlaceProgress3.Value + rnd.Next(0, 3);
+                pickPlaceProgress3.Value += rnd.Next(0, 3);
                 Thread.Sleep(1);
                 if (pickPlaceProgress3.Value >= 100)
                 {
                     pickPlaceProgress3.Value = 100;
                 }
             }
-            pickPlaceOverall.Value = ((Int32)pickPlaceProgress1.Value.Value + (Int32)pickPlaceProgress2.Value.Value + (Int32)pickPlaceProgress3.Value.Value) / 3;
+            pickPlaceOverall.Value = ((int)pickPlaceProgress1.Value.Value + (int)pickPlaceProgress2.Value.Value + (int)pickPlaceProgress3.Value.Value) / 3;
             if (pickPlaceOverall.Value >= 100)
             {
                 pickPlaceProgress3.Value = 0;
                 pickPlaceProgress2.Value = 0;
                 pickPlaceProgress1.Value = 0;
-                incrementPickPlace1 = 0;
-                incrementPickPlace2 = 0;
-                incrementPickPlace3 = 0;
                 pickPlaceOverall.Value = 0;
             }
-        }
-        else
-        {
-            // pickPlaceProgress3.Value = 0;
-            // pickPlaceProgress2.Value = 0;
-            // pickPlaceProgress1.Value = 0;
-            // incrementPickPlace1 = 0;
-            // incrementPickPlace2 = 0;
-            // incrementPickPlace3 = 0;
-            // pickPlaceOverall.Value = 0;
         }
     }
 }
