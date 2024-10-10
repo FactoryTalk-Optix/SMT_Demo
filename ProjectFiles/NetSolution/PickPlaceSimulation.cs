@@ -13,6 +13,12 @@ public class PickPlaceSimulation : BaseNetLogic
     public override void Start()
     {
         // Insert code to be executed when the user-defined logic is started
+        if(!Project.Current.GetVariable("Model/EnableSimulations").Value)
+        {
+            Log.Info(this.GetType().Name, "Simulation is disabled");
+            return;
+        }
+
         rnd = new Random();
         pickPlaceTask = new PeriodicTask(PickPlaceProgressTask, 750, LogicObject);
         pickPlaceTask.Start();

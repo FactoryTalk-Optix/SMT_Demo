@@ -82,3 +82,8 @@ Children:
     Id: g=78d86e8006348a107cb62c7121516cb2
     Type: BaseDataVariableType
     DataType: Boolean
+- Name: EnableSimulations
+  Id: g=3552f1470b71cd4e79a4cd386db90bd2
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true

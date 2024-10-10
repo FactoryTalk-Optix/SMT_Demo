@@ -12,6 +12,11 @@ public class ReelCounterLogic : BaseNetLogic
     private Random rnd;
     public override void Start()
     {
+        if(!Project.Current.GetVariable("Model/EnableSimulations").Value)
+        {
+            Log.Info(this.GetType().Name, "Simulation is disabled");
+            return;
+        }
         // Insert code to be executed when the user-defined logic is started
         ReelCounter = new PeriodicTask(ComponentsCounter, 150, LogicObject);
         rnd = new Random();

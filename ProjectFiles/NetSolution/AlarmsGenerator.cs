@@ -10,6 +10,11 @@ public class AlarmsGenerator : BaseNetLogic
     private PeriodicTask alarmsGeneratorTask;
     public override void Start()
     {
+        if(!Project.Current.GetVariable("Model/EnableSimulations").Value)
+        {
+            Log.Info(this.GetType().Name, "Simulation is disabled");
+            return;
+        }
         // Insert code to be executed when the user-defined logic is started
         alarmsGeneratorTask = new PeriodicTask(AlarmsGeneratorMethod, 10000, LogicObject);
         alarmsGeneratorTask.Start();

@@ -21,6 +21,12 @@ public class OvenTemperatureSimulation : BaseNetLogic
     Random rnd = new Random();
     public override void Start()
     {
+        if (!Project.Current.GetVariable("Model/EnableSimulations").Value)
+        {
+            Log.Info(this.GetType().Name, "Simulation is disabled");
+            return;
+        }
+
         // Insert code to be executed when the user-defined logic is started
         TemperatureTarget1 = Project.Current.GetVariable("Model/Cycle/LiveData/OvenTemperature1").Value;
         TemperatureTarget2 = Project.Current.GetVariable("Model/Cycle/LiveData/OvenTemperature2").Value;

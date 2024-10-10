@@ -1,5 +1,6 @@
 #region Using directives
 using System;
+using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using UAManagedCore;
 #endregion
@@ -13,6 +14,11 @@ public class VariablesSimulator : BaseNetLogic
 
     public override void Start()
     {
+        if(!Project.Current.GetVariable("Model/EnableSimulations").Value)
+        {
+            Log.Info(this.GetType().Name, "Simulation is disabled");
+            return;
+        }
         MyTask = new PeriodicTask(Simulation, 250, LogicObject);
         iCounter = 0;
         dCounter = 0;

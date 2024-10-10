@@ -5661,24 +5661,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       Value: 440.0
-  - Name: PickPlaceSimulation
-    Id: g=bbc5f829ad30f812b018696b2350bff6
-    Type: NetLogic
-  - Name: OvenTemperatureSimulation
-    Id: g=087473004cd63d7ce55c509dcb1fc7f4
-    Type: NetLogic
-    Children:
-    - Name: TemperatureTolerance
-      Id: g=4de3f551bf39031c182dc3a0031f3d58
-      Type: BaseDataVariableType
-      DataType: Int32
-      Value: 5
-  - Name: AlarmsGenerator
-    Id: g=19c549a73c675a7118570da6a450c6a0
-    Type: NetLogic
-  - Name: ReelCounterLogic
-    Id: g=01d05288758adb47ecbb47aaf07d449e
-    Type: NetLogic
   - Name: FullScreen
     Id: g=fa399f5884dd6d52f8a809efa7f1a36c
     Type: BaseDataVariableType
@@ -11071,24 +11053,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       Value: 440.0
-  - Name: PickPlaceSimulation
-    Id: g=da2e7080a6a020e390936b2065b18378
-    Type: NetLogic
-  - Name: OvenTemperatureSimulation
-    Id: g=f3b9ff7f83664f0f5f8af58595398896
-    Type: NetLogic
-    Children:
-    - Name: TemperatureTolerance
-      Id: g=d6ccdf788d86b750597e375f6db705c6
-      Type: BaseDataVariableType
-      DataType: Int32
-      Value: 5
-  - Name: AlarmsGenerator
-    Id: g=40930a0fc78f8b0622be8ac1da886d62
-    Type: NetLogic
-  - Name: ReelCounterLogic
-    Id: g=730d321bd791f9b31a0277dad5a6691c
-    Type: NetLogic
   - Name: Communication
     Id: g=b8220b613fa39ee7a96893b99f5c3383
     Type: RowLayout
@@ -16068,24 +16032,6 @@ Children:
           Type: BaseVariableType
           DataType: Float
           ModellingRule: Optional
-  - Name: PickPlaceSimulation
-    Id: g=65f7919a4e9c5fad92d6d61cba2d45cb
-    Type: NetLogic
-  - Name: OvenTemperatureSimulation
-    Id: g=f1666b055a863a9f794ae2cc0ed9663b
-    Type: NetLogic
-    Children:
-    - Name: TemperatureTolerance
-      Id: g=c7745b92fbd26693e2ad6087b28a80ab
-      Type: BaseDataVariableType
-      DataType: Int32
-      Value: 5
-  - Name: AlarmsGenerator
-    Id: g=0b013798f6c90470eaae28571fcec395
-    Type: NetLogic
-  - Name: ReelCounterLogic
-    Id: g=a5a6cca06f001c4c770a792c3f06b390
-    Type: NetLogic
   - Name: FullScreen
     Id: g=d9e6655a647ea2c4a8d9b6452cd21665
     Type: BaseDataVariableType
@@ -21478,24 +21424,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       Value: 440.0
-  - Name: PickPlaceSimulation
-    Id: g=575f7db0c4137a547f7c38bed1045dfc
-    Type: NetLogic
-  - Name: OvenTemperatureSimulation
-    Id: g=b527ed745cfbfd43997c1a268441e1c8
-    Type: NetLogic
-    Children:
-    - Name: TemperatureTolerance
-      Id: g=a6b2e967ea58b0b83cdebbf40a2478e8
-      Type: BaseDataVariableType
-      DataType: Int32
-      Value: 5
-  - Name: AlarmsGenerator
-    Id: g=6411e327cb55f079116fe6ab49b7cb9a
-    Type: NetLogic
-  - Name: ReelCounterLogic
-    Id: g=875dd4c6d634194572ffa4ef76438901
-    Type: NetLogic
   - Name: Communication
     Id: g=c8d449f71a1f0a885d763801aa9c46ac
     Type: RowLayout
@@ -26642,12 +26570,6 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
-  - Name: ReelCounterLogic
-    Id: g=d7e05f13ca61c57f04e5cc48b7dfd8ae
-    Type: NetLogic
-  - Name: AlarmsGenerator
-    Id: g=641156ecce2de45f41affd98a3846907
-    Type: NetLogic
   - Name: FullScreen
     Id: g=314383df8f0809362afda2afb5983ddf
     Type: BaseDataVariableType
@@ -31451,12 +31373,6 @@ Children:
         DataType: Position
         ModellingRule: Optional
         Value: 4
-  - Name: ReelCounterLogic
-    Id: g=401c19739f6654e16d79b63ddca24526
-    Type: NetLogic
-  - Name: AlarmsGenerator
-    Id: g=5762077158fa6fe56e301ed7b9154246
-    Type: NetLogic
   - Name: FullScreen
     Id: g=e0a0d72dfa13a76453242041a4b259f1
     Type: BaseDataVariableType
@@ -32210,211 +32126,6 @@ Children:
           Value: 40.0
         - Name: Opacity
           Id: g=fb4fe76d2a04e11cf36feb5ae1ba8bad
-          Type: BaseVariableType
-          DataType: Float
-          ModellingRule: Optional
-          Value: 70.0
-      - Name: UserFocusIcon
-        Id: g=f9b993dde8507cf6d768241eaeb42b3b
-        Type: FocusIcon
-        Children:
-        - Name: Circle2
-          Id: g=60b6c00ca62d511dc83d4654a95b7d8b
-          Type: Ellipse
-          Children:
-          - Name: Width
-            Id: g=14274ecc00a8531d7b617851e50b1d15
-            Type: BaseVariableType
-            DataType: Size
-            Value: 20.0
-          - Name: Height
-            Id: g=cd5e4f0b70ce3782ad4d360969eb0c70
-            Type: BaseVariableType
-            DataType: Size
-            Value: 20.0
-          - Name: ParallelAnimation1
-            Id: g=39857d889d4f98130463b8d6a9c59cb7
-            Type: ParallelAnimation
-            Children:
-            - Name: Running
-              Id: g=89f911ddd898806200e4db9fddd1ed6c
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: NumberAnimation1
-              Id: g=941bb8aab74c2d0bf650d0a3f45e1576
-              Type: NumberAnimation
-              Children:
-              - Name: To
-                Id: g=725c21e9cd4e64337aefd6bbf49c5ef1
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 20.0
-              - Name: Target
-                Id: g=677fabae5904d1252e0f5ab89d028191
-                Type: NodePointer
-                DataType: NodeId
-                Children:
-                - Name: Kind
-                  Id: g=edd0bcdcee6a1ab76da0ebb11555ebe5
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/VariableTypes/BaseVariableType"
-                - Name: DynamicLink
-                  Id: g=a0647083e8f1f9def713c129c3835dad
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../Width@NodeId"
-              - Name: Running
-                Id: g=221a9980a1b0b8ad55ea60e9cbe920e9
-                Type: BaseDataVariableType
-                DataType: Boolean
-                Value: true
-            - Name: NumberAnimation2
-              Id: g=783884874ea0141bc472c94c97220d1c
-              Type: NumberAnimation
-              Children:
-              - Name: To
-                Id: g=0dbe4d2caa87eb476a3611e27dd4ff73
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 20.0
-              - Name: Target
-                Id: g=8d0eda9c783b9ec5d5aa63c801a83630
-                Type: NodePointer
-                DataType: NodeId
-                Children:
-                - Name: Kind
-                  Id: g=c56fbaa540d63bf8294829baac2cb6d5
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/VariableTypes/BaseVariableType"
-                - Name: DynamicLink
-                  Id: g=2e5591b454531ea40ac1c3cf22f49fdb
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../Height@NodeId"
-              - Name: Running
-                Id: g=47510aefa6b0480eae7ca41dac440a14
-                Type: BaseDataVariableType
-                DataType: Boolean
-                Value: true
-        - Name: Circle1
-          Id: g=6703ca09b866aec93c19d9d12bb13169
-          Type: Ellipse
-          Children:
-          - Name: Width
-            Id: g=1a2c530a5e1d787dadc52d76b032567d
-            Type: BaseVariableType
-            DataType: Size
-            Value: 20.0
-          - Name: Height
-            Id: g=d2f7517fbe1d482fd2447bb74600e97e
-            Type: BaseVariableType
-            DataType: Size
-            Value: 20.0
-          - Name: ParallelAnimation1
-            Id: g=079b99736379bc0d30641cf5319a6956
-            Type: ParallelAnimation
-            Children:
-            - Name: Running
-              Id: g=00c92efb75afc62c4af777d4fa6a2a72
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: NumberAnimation1
-              Id: g=39835ead34f015ee52c7c24f5f78e4e5
-              Type: NumberAnimation
-              Children:
-              - Name: To
-                Id: g=212faf26af12f9940582de5f54e10f61
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 40.0
-              - Name: Target
-                Id: g=e095fc56deeb7990209cd67c707a058b
-                Type: NodePointer
-                DataType: NodeId
-                Children:
-                - Name: Kind
-                  Id: g=bddf8579a30b286f5988004915632c28
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/VariableTypes/BaseVariableType"
-                - Name: DynamicLink
-                  Id: g=d489ddbeb2437b5f66a7e9f2bec5eb7d
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../Width@NodeId"
-              - Name: Running
-                Id: g=c19a8e0f85b8323af754e50268af7cfc
-                Type: BaseDataVariableType
-                DataType: Boolean
-                Value: true
-            - Name: NumberAnimation2
-              Id: g=913a407e524f29846916fb602b24b66e
-              Type: NumberAnimation
-              Children:
-              - Name: To
-                Id: g=06a45e73c8bb480f7abc3ac9ea0e1ae7
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 40.0
-              - Name: Target
-                Id: g=273f8b99bcfec5cc2c7440847a4472df
-                Type: NodePointer
-                DataType: NodeId
-                Children:
-                - Name: Kind
-                  Id: g=5d07b149604a48d353931a3cf7920c44
-                  Type: PropertyType
-                  DataType: NodeId
-                  Value: "/Types/VariableTypes/BaseVariableType"
-                - Name: DynamicLink
-                  Id: g=20fcd17ef91aa46143dc1b2c15dfa524
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../Height@NodeId"
-              - Name: Running
-                Id: g=3dc276057fe3d05d55d5c48bc8ca0002
-                Type: BaseDataVariableType
-                DataType: Boolean
-                Value: true
-        - Name: Button
-          Id: g=2e2439b03f582b51da372b1dbd423b10
-          Type: Button
-        - Name: HorizontalAlignment
-          Id: g=7150e12d210ef06d853db5bf92810be4
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 1
-        - Name: RightMargin
-          Id: g=9ed32b1d04073bd2549e378cd35dcdaf
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 150.0
-        - Name: TopMargin
-          Id: g=d9dda5cdea96fd455e7e387b727b569c
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 5.0
-        - Name: Width
-          Id: g=9162a5e449ca0565f603b1429771b21c
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 40.0
-        - Name: Height
-          Id: g=4c821c3f05656b8bb18860d4ee081632
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 40.0
-        - Name: Opacity
-          Id: g=7ecaf1e6135e4019706ca60ff5486380
           Type: BaseVariableType
           DataType: Float
           ModellingRule: Optional

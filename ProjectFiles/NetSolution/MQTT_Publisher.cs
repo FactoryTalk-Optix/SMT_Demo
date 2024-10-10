@@ -48,7 +48,7 @@ public class MQTT_Publisher : BaseNetLogic
         {
             // Get payload from model (assuming it's a JSON string)
             string payload = $"{PayloadFromModel(Project.Current.Get("Model"))}";
-            payload = "{" + payload.Substring(0, payload.Length - 1) + "}";
+            payload = string.Concat("{", payload.AsSpan(0, payload.Length - 1), "}");
 
             // Deserialize the payload string into a JObject
             JObject payloadObject = JObject.Parse(payload);

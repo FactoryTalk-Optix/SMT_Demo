@@ -82,3 +82,21 @@ Children:
 - Name: AutoRestartDemo
   Id: g=fafbe2b6aa0aa25c6aad962ab803c2d9
   Type: NetLogic
+- Name: PickPlaceSimulation
+  Id: g=d38bfed071fa55228008b8c3b1704562
+  Type: NetLogic
+- Name: OvenTemperatureSimulation
+  Id: g=0bc167e29e24a41da2314645e00ac470
+  Type: NetLogic
+  Children:
+  - Name: TemperatureTolerance
+    Id: g=b413553e35468f27b02b0e6b81d154da
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+- Name: AlarmsGenerator
+  Id: g=8e6d3a694ae3d056568566ca085b5615
+  Type: NetLogic
+- Name: ReelCounterLogic
+  Id: g=327625d7cd1e674a1e0cc219f77a6332
+  Type: NetLogic
