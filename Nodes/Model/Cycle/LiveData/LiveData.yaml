@@ -56,20 +56,17 @@ Children:
     Children:
     - Name: Low
       Id: g=d7a022cbe72a29a624637bdceffddcdb
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
     - Name: High
       Id: g=1e307a9226994a1eac85cfcaf7910edd
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
       Value: 10000.0
     - Name: Constrain
       Id: g=228422060a485a6178f02c49a8367900
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Boolean
-      ReferenceType: HasProperty
       Value: true
 - Name: ReelCounter2
   Id: g=be02a7fb768d4ba17fb3660720b64ab9
@@ -84,20 +81,17 @@ Children:
     Children:
     - Name: Low
       Id: g=1e2f4f5e9c1fd06c648ee1d31aef9b56
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
     - Name: High
       Id: g=e914225d5476fe0979d35dc251da17f1
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
       Value: 10000.0
     - Name: Constrain
       Id: g=0d0729e97bd0b066c3c985ce7fca3e3a
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Boolean
-      ReferenceType: HasProperty
       Value: true
 - Name: ReelCounter3
   Id: g=5795a219f33879b63fc354b621480fda
@@ -112,20 +106,17 @@ Children:
     Children:
     - Name: Low
       Id: g=0544c1b06f4ba14ee4ddd972c0b643b4
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
     - Name: High
       Id: g=93713f2429075fb58683630b4067b619
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
       Value: 10000.0
     - Name: Constrain
       Id: g=ee255ad7b0ca126d8e063da604b01e7f
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Boolean
-      ReferenceType: HasProperty
       Value: true
 - Name: ReelCounter4
   Id: g=ad2d7405d68a4583eb57c80b01ede044
@@ -140,18 +131,15 @@ Children:
     Children:
     - Name: Low
       Id: g=17a2e3cf10eac93167ddc23d82be8a98
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
     - Name: High
       Id: g=a4f58d71f9532aaa0745682cede7dc90
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Double
-      ReferenceType: HasProperty
       Value: 10000.0
     - Name: Constrain
       Id: g=5626ae0c4afc7584ec272c2b5608b78d
-      Type: BaseVariableType
+      Type: BaseDataVariableType
       DataType: Boolean
-      ReferenceType: HasProperty
       Value: true

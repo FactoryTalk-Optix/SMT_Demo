@@ -6,13 +6,13 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.4
- CoreVersion: 3.0
+ ProductVersion: 1.5
+ CoreVersion: 4.0
  Dependencies:
   2:
    Uri: 'urn:FTOptix:Core:Net'
    Module: FTOptix.Core.Net
-   Version: 1.2
+   Version: 2.0
   3:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
@@ -24,19 +24,19 @@ Project:
   5:
    Uri: 'urn:FTOptix:UI'
    Module: FTOptix.UI
-   Version: 12.4
+   Version: 14.2
   6:
    Uri: 'urn:FTOptix:UI:Net'
    Module: FTOptix.UI.Net
-   Version: 12.4
+   Version: 14.2
   7:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 6.1
+   Version: 6.5
   8:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
-   Version: 4.4
+   Version: 4.8
   9:
    Uri: 'urn:FTOptix:EventLogger'
    Module: FTOptix.EventLogger
@@ -48,7 +48,7 @@ Project:
   11:
    Uri: 'urn:FTOptix:Alarm'
    Module: FTOptix.Alarm
-   Version: 4.0
+   Version: 6.0
   12:
    Uri: 'urn:FTOptix:Alarm:Net'
    Module: FTOptix.Alarm.Net
@@ -56,7 +56,7 @@ Project:
   13:
    Uri: 'urn:FTOptix:NativeUI'
    Module: FTOptix.NativeUI
-   Version: 2.0
+   Version: 2.1
   14:
    Uri: 'urn:FTOptix:NativeUI:Net'
    Module: FTOptix.NativeUI.Net
@@ -80,7 +80,7 @@ Project:
   19:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
-   Version: 3.0
+   Version: 4.0
   20:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
@@ -92,11 +92,11 @@ Project:
   23:
    Uri: 'urn:FTOptix:WebUI'
    Module: FTOptix.WebUI
-   Version: 1.1
+   Version: 1.2
   24:
    Uri: 'urn:FTOptix:WebUI:Net'
    Module: FTOptix.WebUI.Net
-   Version: 1.1
+   Version: 1.2
   25:
    Uri: 'urn:FTOptix:OPCUAServer'
    Module: FTOptix.OPCUAServer
@@ -106,14 +106,14 @@ Project:
    Module: FTOptix.OPCUAServer.Net
    Version: 1.1
  Statistics:
-  TotalNodeCount: 27411
+  TotalNodeCount: 27413
   Objects: 4963
   ObjectTypes: 60
-  Variables: 22375
+  Variables: 22377
   VariableTypes: 0
   DataTypes: 0
   Methods: 13
-  References: 203
+  References: 288
   ReferenceTypes: 0
   Files: 40
  Nodes:

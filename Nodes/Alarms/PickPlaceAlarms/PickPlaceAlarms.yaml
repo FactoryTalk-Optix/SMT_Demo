@@ -65,6 +65,21 @@ Children:
   - Class: Reference
     Target: ns=11;i=135
     Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
+    Direction: Forward
 - Name: WarningPP2
   Id: g=ded705e5cfdf73d55a4e7190a9d9e548
   Type: OffNormalAlarmController
@@ -127,6 +142,21 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=11;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
     Direction: Forward
 - Name: WarningPP3
   Id: g=794473c7ada7cbaac55db5785ec334b6
@@ -191,6 +221,21 @@ Children:
   - Class: Reference
     Target: ns=11;i=135
     Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
+    Direction: Forward
 - Name: WarningPP4
   Id: g=ea21c074c1258daa112af0c067fc9e29
   Type: OffNormalAlarmController
@@ -253,6 +298,21 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=11;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
     Direction: Forward
 - Name: ErrorPP1
   Id: g=3488586361f1aad712cb56ca2163a285
@@ -317,6 +377,21 @@ Children:
   - Class: Reference
     Target: ns=11;i=135
     Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
+    Direction: Forward
 - Name: ErrorPP2
   Id: g=a3608d8ad5938e69d2c711f7074ca786
   Type: OffNormalAlarmController
@@ -379,6 +454,21 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=11;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
     Direction: Forward
 - Name: ErrorPP3
   Id: g=28e9a30ea053a4eec764ba5f8a7961a7
@@ -443,6 +533,21 @@ Children:
   - Class: Reference
     Target: ns=11;i=135
     Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
+    Direction: Forward
 - Name: ErrorPP4
   Id: g=c89179fdcad1239734356f7e608fae96
   Type: OffNormalAlarmController
@@ -505,4 +610,19 @@ Children:
     Direction: Forward
   - Class: Reference
     Target: ns=11;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=154
     Direction: Forward

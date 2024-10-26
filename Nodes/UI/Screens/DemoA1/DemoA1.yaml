@@ -6459,7 +6459,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ModellingRule: Optional
-        Value: "0:00:00:1.0000000"
+        Value: "0:00:00:01.0000000"
     - Name: FilteringOptionsPanel
       Id: g=597c3e672af1422266172dae1e515350
       Type: Panel

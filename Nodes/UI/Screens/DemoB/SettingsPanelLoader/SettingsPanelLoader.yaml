@@ -4360,7 +4360,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Duration
       ModellingRule: Optional
-      Value: "0:00:00:1.0000000"
+      Value: "0:00:00:01.0000000"
     - Name: RowBackgroundColor
       Id: g=85f331ad50de3b14a6ba83d7395472fc
       Type: BaseDataVariableType

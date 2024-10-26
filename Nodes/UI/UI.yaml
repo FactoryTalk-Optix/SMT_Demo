@@ -657,6 +657,16 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         AccessLevel: Read
+      - Name: StyleSheet
+        Id: g=baa979705201fdcdca7e2025d1d78e16
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Id: g=2690a842567f4224454001933546b0b2
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
   - Name: MaxNumberOfConnections
     Id: g=fcdd9218c35be2fb5ebfdfe96e30071f
     Type: BaseDataVariableType
@@ -26561,7 +26571,7 @@ Children:
       - Name: ImagePosition
         Id: g=7ea0534e37aa633acd202b2444b990fe
         Type: BaseDataVariableType
-        DataType: Position
+        DataType: ButtonImagePosition
         ModellingRule: Optional
         Value: 4
     - Name: VerticalAlignment
@@ -31370,7 +31380,7 @@ Children:
       - Name: ImagePosition
         Id: g=df8d22955d015a388f6d7a6653094a2c
         Type: BaseDataVariableType
-        DataType: Position
+        DataType: ButtonImagePosition
         ModellingRule: Optional
         Value: 4
   - Name: FullScreen
@@ -32771,7 +32781,7 @@ Children:
         - Name: ImagePosition
           Id: g=42303292b02c546ebc101b0540a2f3dc
           Type: BaseDataVariableType
-          DataType: Position
+          DataType: ButtonImagePosition
           ModellingRule: Optional
           Value: 4
       - Name: Settings
@@ -33061,7 +33071,7 @@ Children:
         - Name: ImagePosition
           Id: g=a7cbac7076bbdec69f38a693c49c576b
           Type: BaseDataVariableType
-          DataType: Position
+          DataType: ButtonImagePosition
           ModellingRule: Optional
           Value: 4
       - Name: LeftMargin
