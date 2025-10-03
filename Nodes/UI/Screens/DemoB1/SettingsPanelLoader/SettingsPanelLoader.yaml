@@ -480,6 +480,14 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 60.0
+    - Name: SortColumn
+      Id: g=a06a2765d956b651e9bb01f949255cb1
+      Type: BaseDataVariableType
+      DataType: NodeId
+    - Name: SortOrder
+      Id: g=ef8accdf536724ff30bf2157be5dcfe7
+      Type: BaseDataVariableType
+      DataType: SortOrderEnum
   - Name: OriginOffset
     Id: g=5be3b097d0edf2a9a88cce9b299d6eaf
     Type: Label
@@ -1462,7 +1470,6 @@ Children:
       Id: g=abbe526f810543fcfd59df20a4489519
       Type: BaseDataVariableType
       DataType: SortOrderEnum
-      ModellingRule: Optional
       Value: 1
     - Name: AutoRefreshTime
       Id: g=56db6fd9c11eb1eacd45eb78861283f4

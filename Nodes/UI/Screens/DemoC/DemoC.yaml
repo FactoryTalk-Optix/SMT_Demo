@@ -1269,6 +1269,14 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
+    - Name: SortColumn
+      Id: g=1446dd987ea1a44199ddbce45f1ca813
+      Type: BaseDataVariableType
+      DataType: NodeId
+    - Name: SortOrder
+      Id: g=578aa1b1ac00e9856d18d979e970ec89
+      Type: BaseDataVariableType
+      DataType: SortOrderEnum
   - Name: Carrier
     Id: g=4a7901fceecf3626fe3de7c11c78ef06
     Type: Label

@@ -51,7 +51,6 @@ Children:
     Id: g=b4803a3a8361453fb651bb52fe89b0e4
     Type: BaseDataVariableType
     DataType: Byte
-    Value: 8
 - Name: AlarmConfiguration
   Id: g=2e9afe48d966be279231e31d033a752f
   Type: PropertyGroup

@@ -459,21 +459,41 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         Value: 18.0
+  - Name: RectangleStyles
+    Id: g=75852c057dda985d67439fbf637f5f82
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=0e843f28b4736458c38f59f0633a3c91
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Id: g=c73debc16513cef3933401180265417a
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Id: g=04d39a3d98537da8708dbff46508f959
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Id: g=a28c48a2eaa17f88458117afb09540d9
+      Type: ScreenStyle
 - Name: NativePresentationEngine
   Id: g=ebc9a35a8d3ecc1be63b80287aa6ddfe
   Type: NativePresentationEngine
   ReferenceType: HasOrderedComponent
   Children:
-  - Name: EnableVirtualKeyboard
+  - Name: VirtualKeyboard
     Id: g=f8a8c570d9dfc2a45d3b5faa81de7550
     Type: BaseDataVariableType
-    DataType: Boolean
-    Value: true
+    DataType: VirtualKeyboardEngineTypeEnum
+    Value: 1
   - Name: StartWindow
     Id: g=dd099fabeac16c4cbf6428bf554d9001
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/SMT_Demo/UI/MainWindowA1"
+    Value: "/Objects/SMT_Demo/UI/MainWindowA"
     Children:
     - Name: Kind
       Id: g=0c0c23edc328d8b03e5d1cfdd2ac8389
@@ -541,7 +561,7 @@ Children:
     Id: g=ccf32bbd78243f8a38fdba86d081b23e
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/SMT_Demo/UI/MainWindowA1"
+    Value: "/Objects/SMT_Demo/UI/MainWindowA"
     Children:
     - Name: Kind
       Id: g=24b2c730eecce9f9919f2019dee0d201
@@ -672,6 +692,10 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 3
+  - Name: VirtualKeyboard
+    Id: g=038bb0d7400e05cfa9d0c9cb7842c7c9
+    Type: BaseDataVariableType
+    DataType: VirtualKeyboardEngineTypeEnum
 - Name: MainWindowA
   Id: g=e8e614fba8c2943904c7391d82e22cf1
   Supertype: Window
@@ -5671,6 +5695,37 @@ Children:
       Type: BaseVariableType
       DataType: Size
       Value: 440.0
+    - Name: ContentWidth
+      Id: g=ef4a4654f2fcc9eb1c4f11cb9023223c
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=bb9f9f61ec97dd081b1ca091095d1c37
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=8ccdf6a977be92a7fd087e97bf3b64fe
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=c0986537e058cc38fc14c0ea7d7026cf
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=784a07dbf96c98297531a44a1d534502
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=a40a38fd611d26d6a07059feae8b50cd
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=5;i=1394
+      Direction: Forward
   - Name: FullScreen
     Id: g=fa399f5884dd6d52f8a809efa7f1a36c
     Type: BaseDataVariableType
@@ -11063,6 +11118,37 @@ Children:
       Type: BaseVariableType
       DataType: Size
       Value: 440.0
+    - Name: ContentWidth
+      Id: g=972bdf607066f85e0e19862e1d8150a7
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=71aaf840c5c5ca55325ceef290d335e8
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=943bc13347bf1a76b6d703ce78c87852
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=2eb3186537e80b8869a5750010d77ce2
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=6e5c3cf6102597d38c85b8a4883661e0
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=06b2b7bed308a3cd76915beda6e37ebc
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=5;i=1394
+      Direction: Forward
   - Name: Communication
     Id: g=b8220b613fa39ee7a96893b99f5c3383
     Type: RowLayout
@@ -21434,6 +21520,37 @@ Children:
       Type: BaseVariableType
       DataType: Size
       Value: 440.0
+    - Name: ContentWidth
+      Id: g=9f12cab2138a66be2a60e6bcf8a8ad12
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentHeight
+      Id: g=dd67c5723840cae667d56a1957049c39
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewWidth
+      Id: g=24c90968a9913463d8868fdfa963ce38
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ViewHeight
+      Id: g=78d39963e40a39c37d6ec7eb691243e3
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+    - Name: ContentX
+      Id: g=40304da25aaa88e265d28d99e5e2558a
+      Type: BaseDataVariableType
+      DataType: Size
+    - Name: ContentY
+      Id: g=0094bf2a2bd7911514310c0f67e94b03
+      Type: BaseDataVariableType
+      DataType: Size
+    - Class: Reference
+      Target: ns=5;i=1394
+      Direction: Forward
   - Name: Communication
     Id: g=c8d449f71a1f0a885d763801aa9c46ac
     Type: RowLayout
@@ -31583,6 +31700,11 @@ Children:
           DataType: VerticalAlignment
           ModellingRule: Optional
           Value: 3
+        - Name: BorderThickness
+          Id: g=ba8f1e21412f780060b7c6d22c96e43e
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: LeftImage
         Id: g=d37eedfc22389a60efeaaead18e71de5
         Type: Image
@@ -33289,3 +33411,4 @@ Children:
 - File: Screens/Screens.yaml
 - File: Templates/Templates.yaml
 - File: LoginForm/LoginForm.yaml
+- File: Keyboards/Keyboards.yaml

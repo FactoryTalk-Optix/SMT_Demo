@@ -6,37 +6,37 @@ Project:
  Company: ''
  Copyright: ''
  FormatVersion: 1
- ProductVersion: 1.5
- CoreVersion: 4.0
+ ProductVersion: 1.6
+ CoreVersion: 4.2
  Dependencies:
   2:
    Uri: 'urn:FTOptix:Core:Net'
    Module: FTOptix.Core.Net
-   Version: 2.0
+   Version: 2.2
   3:
    Uri: 'urn:FTOptix:CoreBase'
    Module: FTOptix.CoreBase
-   Version: 4.0
+   Version: 5.0
   4:
    Uri: 'urn:FTOptix:CoreBase:Net'
    Module: FTOptix.CoreBase.Net
-   Version: 1.1
+   Version: 2.0
   5:
    Uri: 'urn:FTOptix:UI'
    Module: FTOptix.UI
-   Version: 14.2
+   Version: 18.1
   6:
    Uri: 'urn:FTOptix:UI:Net'
    Module: FTOptix.UI.Net
-   Version: 14.2
+   Version: 18.1
   7:
    Uri: 'urn:FTOptix:HMIProject'
    Module: FTOptix.HMIProject
-   Version: 6.5
+   Version: 7.1
   8:
    Uri: 'urn:FTOptix:HMIProject:Net'
    Module: FTOptix.HMIProject.Net
-   Version: 4.8
+   Version: 4.9
   9:
    Uri: 'urn:FTOptix:EventLogger'
    Module: FTOptix.EventLogger
@@ -56,7 +56,7 @@ Project:
   13:
    Uri: 'urn:FTOptix:NativeUI'
    Module: FTOptix.NativeUI
-   Version: 2.1
+   Version: 3.1
   14:
    Uri: 'urn:FTOptix:NativeUI:Net'
    Module: FTOptix.NativeUI.Net
@@ -100,21 +100,21 @@ Project:
   25:
    Uri: 'urn:FTOptix:OPCUAServer'
    Module: FTOptix.OPCUAServer
-   Version: 1.1
+   Version: 1.2
   26:
    Uri: 'urn:FTOptix:OPCUAServer:Net'
    Module: FTOptix.OPCUAServer.Net
-   Version: 1.1
+   Version: 1.2
  Statistics:
-  TotalNodeCount: 27413
-  Objects: 4963
+  TotalNodeCount: 27404
+  Objects: 4968
   ObjectTypes: 60
-  Variables: 22377
+  Variables: 22363
   VariableTypes: 0
   DataTypes: 0
   Methods: 13
-  References: 288
+  References: 299
   ReferenceTypes: 0
-  Files: 40
+  Files: 41
  Nodes:
  - File: Nodes/SMT_Demo.yaml

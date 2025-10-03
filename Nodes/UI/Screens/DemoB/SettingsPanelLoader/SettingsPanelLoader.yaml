@@ -480,6 +480,14 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
+    - Name: SortColumn
+      Id: g=ee5260ebb0012f255f1d2fcd8da1b3a5
+      Type: BaseDataVariableType
+      DataType: NodeId
+    - Name: SortOrder
+      Id: g=cf88588b2e3cfbe3b1b0e48db567e266
+      Type: BaseDataVariableType
+      DataType: SortOrderEnum
   - Name: OriginOffset
     Id: g=5a1393960561d8e400ec517d71dd2665
     Type: Label
@@ -1576,12 +1584,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
-      - Name: BorderThickness
-        Id: g=17bda085053734633528869a79159a50
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
       - Name: LeftMargin
         Id: g=25de17cf498b4afa25c11275b9774819
         Type: BaseVariableType
@@ -1996,6 +1998,11 @@ Children:
               Id: g=9bf72576e1111b70f035d6a4d15f5587
               Type: BaseVariableType
               DataType: Size
+        - Name: BorderThickness
+          Id: g=d0aec819d79eb0b2b61234d1e228a60c
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: BorderColor
         Id: g=507c7670608af0f2c35e07e1781a6a60
         Type: BaseDataVariableType
@@ -2225,12 +2232,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
-      - Name: BorderThickness
-        Id: g=9fe5f8be91586db3ae6a91934c2bd929
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
       - Name: LeftMargin
         Id: g=f48386fafc1e00ea9222cdbd0ff35a41
         Type: BaseVariableType
@@ -2643,6 +2644,11 @@ Children:
               DataType: HorizontalAlignment
               ModellingRule: Optional
               Value: 2
+        - Name: BorderThickness
+          Id: g=4587410103a79e15396005c199a82743
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: BorderColor
         Id: g=ca29e7c5f9ea65f299cd7d7075c680b5
         Type: BaseDataVariableType
@@ -2872,12 +2878,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
-      - Name: BorderThickness
-        Id: g=801a52571233250b4e9f78a4732b6328
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
       - Name: LeftMargin
         Id: g=b020e374bd998f4eaf8982d941e02d13
         Type: BaseVariableType
@@ -3291,6 +3291,11 @@ Children:
               DataType: HorizontalAlignment
               ModellingRule: Optional
               Value: 2
+        - Name: BorderThickness
+          Id: g=edba579a901372696fcf934ab13b9a11
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: BorderColor
         Id: g=b732082f658435738860a3b3dbd8ac30
         Type: BaseDataVariableType
@@ -3520,12 +3525,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
-      - Name: BorderThickness
-        Id: g=b2cf766f0c0b9e8b8ceff94d01814cfc
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
       - Name: LeftMargin
         Id: g=1816eae5f7b427858eeae13f07034cf7
         Type: BaseVariableType
@@ -3939,6 +3938,11 @@ Children:
               DataType: HorizontalAlignment
               ModellingRule: Optional
               Value: 2
+        - Name: BorderThickness
+          Id: g=b9800b1c5dca4aaaf775fb4550cafb7b
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
       - Name: BorderColor
         Id: g=74b50a28091b87ecfbb859f4b91fe138
         Type: BaseDataVariableType
@@ -4353,7 +4357,6 @@ Children:
       Id: g=aad4a21fa63627d2aaf95aa02de1d577
       Type: BaseDataVariableType
       DataType: SortOrderEnum
-      ModellingRule: Optional
       Value: 1
     - Name: AutoRefreshTime
       Id: g=560fa158da56f7d4adc46dead73d5d62

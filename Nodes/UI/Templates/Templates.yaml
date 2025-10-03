@@ -103,6 +103,11 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+    - Name: BorderThickness
+      Id: g=b25aaa1629f1f5f75401150c3b72013d
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
   - Name: BackgroundNotSelected
     Id: g=d6532e1df1015887f833b9e48af1dd83
     Type: Image
@@ -689,12 +694,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
-    - Name: BorderThickness
-      Id: g=7129e37e6d927ef4fbfe17d10c362cd0
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: HorizontalAlignment
       Id: g=0edc809cfbb9c2de76e56275f5812b45
       Type: BaseVariableType
@@ -1692,12 +1691,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
-    - Name: BorderThickness
-      Id: g=7b31d1c908a46cb2cd34586f724bf919
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: HorizontalAlignment
       Id: g=a73bc4f38bd597b93015256328413529
       Type: BaseVariableType
@@ -1915,12 +1908,6 @@ Children:
       DataType: Color
       ModellingRule: Optional
       Value: "#ffffffb0"
-    - Name: BorderThickness
-      Id: g=ba60d700619368bd7f6b4e36339e1647
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
   - Name: Title
     Id: g=7fc1e763507baec044c40d7d4d752682
     Type: Label
@@ -2180,6 +2167,11 @@ Children:
     Id: g=38378fa382373d1c95bdb2a92648fc4c
     Type: BaseDataVariableType
     DataType: Int32
+  - Name: BorderThickness
+    Id: g=4bfde65814f11d5c53a515781c4d4fc6
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
 - Name: AlarmWidgetType
   Id: g=f4edad3e3a258a209683734399ad4a38
   Supertype: Panel
@@ -2795,12 +2787,6 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
-    - Name: BorderThickness
-      Id: g=920e3db0a7448fd65093808c23b9ccfe
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
   - Name: TopBar
     Id: g=b2964c43499d1aae29341e837876c6c0
     Type: Image

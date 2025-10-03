@@ -3713,6 +3713,11 @@ Children:
       DataType: Float
       ModellingRule: Optional
       Value: 40.0
+    - Name: BorderThickness
+      Id: g=a57e23e86efd3768b76e0c8730c5f7ee
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
   - Name: Rectangle6
     Id: g=8ca1f46213146e5dff471af00ae74c37
     Type: Rectangle
@@ -3753,6 +3758,11 @@ Children:
       DataType: Float
       ModellingRule: Optional
       Value: 40.0
+    - Name: BorderThickness
+      Id: g=3a2a93e9a2ad9a301687c45d83a4ffa6
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
   - Name: Rectangle7
     Id: g=1c0113ac19c66e92b3769809fbafee29
     Type: Rectangle
@@ -3798,6 +3808,11 @@ Children:
       DataType: Float
       ModellingRule: Optional
       Value: 40.0
+    - Name: BorderThickness
+      Id: g=bc15bd70d39adc066709f3a0a223f71f
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
   - Name: Rectangle8
     Id: g=52f7eb25a13a1231f74707032abd8117
     Type: Rectangle
@@ -3838,6 +3853,11 @@ Children:
       DataType: Float
       ModellingRule: Optional
       Value: 40.0
+    - Name: BorderThickness
+      Id: g=ba831ea58b070530f6b4724cba07dc0c
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
 - Name: AlarmsA3
   Id: g=5211e92ec6676995c86fe51354263a4c
   Supertype: Screen
@@ -5008,7 +5028,6 @@ Children:
         Id: g=6bbaef5b421da471a21fd9f5fe259fd9
         Type: BaseDataVariableType
         DataType: SortOrderEnum
-        ModellingRule: Optional
         Value: 1
       - Name: SortColumn
         Id: g=88da20fb6b529de2f2c45cf74d1861eb
@@ -5882,7 +5901,6 @@ Children:
         Id: g=da11aaeb83d0359ecc42e181c954c5f0
         Type: BaseDataVariableType
         DataType: SortOrderEnum
-        ModellingRule: Optional
         Value: 1
       - Name: VerticalAlignment
         Id: g=ce82786d814536ac0c457d1e7a4057ec
@@ -7256,6 +7274,14 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 530.0
+    - Name: SortColumn
+      Id: g=e91267c17dd9c6d9e982aa9bd6ab0e9e
+      Type: BaseDataVariableType
+      DataType: NodeId
+    - Name: SortOrder
+      Id: g=94935646491a12e21ad0869000efe1f9
+      Type: BaseDataVariableType
+      DataType: SortOrderEnum
   - Name: OriginOffset
     Id: g=33a3cf42a53e1d3eb630235cb59c1e5a
     Type: Label
@@ -7474,12 +7500,6 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 60.0
-    - Name: BorderThickness
-      Id: g=f58a0a594154b9579e50c3e2cd740a37
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
     - Name: Title
       Id: g=a0b50fff0690d0deddd9bcb83a90bedf
       Type: Label

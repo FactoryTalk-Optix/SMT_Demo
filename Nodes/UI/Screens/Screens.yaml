@@ -1037,7 +1037,6 @@ Children:
       Id: g=74395602330ba85d83d555712ecd89dd
       Type: BaseDataVariableType
       DataType: SortOrderEnum
-      ModellingRule: Optional
       Value: 1
     - Name: AutoRefreshTime
       Id: g=aedcfefc53711e34b6e4831987130c40
